@@ -1,1 +1,1 @@
-alert("Welcome to my Dev Portfolio! 😊")
+// alert("Welcome to my Dev Portfolio! 😊")
