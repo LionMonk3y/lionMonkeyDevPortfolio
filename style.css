@@ -1,79 +1,49 @@
-/* after this sign * all changes will apply to the whole website */
+/* http://superherojs.com/ 
+Fajnie zrobione zmniejszanie się ekranu i rzeczy na nim. */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h1,
-p {
-    color: rgb(219, 151, 79);
-}
-
-p {
-    font-size: 1em;
-}
-
-/*
-#aboutMe {
-  background-color: blue;
-  width: 50px;
-  height: 100px;
-  display: inline-block;
-}
-#skills {
-  background-color: red;
-  width: 50px;
-  display: inline-block;
-}
-#sliderMyProjects {
-  background-color: yellow;
-  width: 50px;
-  display: inline-block;
-}
-#footerContact {
-  background-color: green;
-  width: 50px;
-  display: inline-block;
-}
-
-/* Main changes */
-
 body {
-    background-color: rgb(143, 78, 8);
+    background-image: url(/images/temporaryBackground_v1.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    background-attachment: fixed;
 }
 
 nav {
-    width: 100%;
     height: 100px;
-    background-color: rgb(83, 45, 4);
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 20px;
 }
 
 ul {
     display: flex;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    line-height: 100px;
-    background-color: rosybrown;
+    column-gap: 80px;
+
 }
 
-ul li a {
-    display: block;
+ul li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+a {
+    color: coral;
     text-decoration: none;
-    font-size: 1.5em;
-    color: rgb(219, 151, 79);
-    padding: 0 20px;
 }
 
-ul li a:hover {
-    color: rgb(235, 201, 165);
-}
-
-#logo img {
-    margin-left: 40px;
-    height: 100px;
-}
-
-#logo {
-    flex: 1;
+a:hover {
+    color: rgb(123, 63, 42);
+    text-decoration: underline;
 }
