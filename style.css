@@ -1,9 +1,23 @@
 /* http://superherojs.com/ 
-Fajnie zrobione zmniejszanie się ekranu i rzeczy na nim. */
+Fajnie zrobione zmniejszanie się ekranu i rzeczy na nim. 
+
+https://www.user.com/en
+
+*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: myFontJreeng;
+    src: url(/fonts/Jreeng.ttf);
+}
+
+@font-face {
+    font-family: myFontYikes;
+    src: url(/fonts/YIKES!__.TTF);
 }
 
 body {
@@ -15,15 +29,15 @@ body {
     background-attachment: fixed;
 }
 
-nav {
-    height: 100px;
+.navMenu {
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 20px;
+    background-color: rgba(27, 23, 26);
 }
 
-ul {
+.navMenuList {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,19 +45,52 @@ ul {
 
 }
 
-ul li {
+.navMenuList li {
     list-style-type: none;
     padding: 5px;
     margin: 10px;
 
 }
 
-a {
+.navMenuList a {
+    font-family: myFontJreeng;
     color: coral;
     text-decoration: none;
+    font-size: 20px;
+
 }
 
-a:hover {
+.navMenuList a:hover {
     color: rgb(123, 63, 42);
     text-decoration: underline;
+}
+
+
+
+
+
+.aboutMeSection {
+    height: 200px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMePicture{
+    background-color: aqua;
+    
+
+}
+
+.aboutMePicture img{
+    height: 300px;
+
+}
+
+
+
+.aboutMeInfo {
+    background-color: blue;
+    height: 400px;
 }
