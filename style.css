@@ -20,17 +20,11 @@ https://www.user.com/en
     src: url(/fonts/YIKES!__.TTF);
 }
 
-body {
-    background-image: url(/images/temporaryBackground_v1.1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100%;
-    background-attachment: fixed;
-}
+
+/* NAVIGATION MENU */
 
 .navMenu {
-    height: 80px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -67,30 +61,138 @@ body {
 
 
 
+/* MAIN PAGE */
 
+.mainPage {
+    background-image: url(/images/temporaryBackground_v1.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 90vh;
+    background-attachment: scroll;
+}
+
+.mainPageBottomInfo {
+    background-color: aliceblue;
+    display: inline-block;
+    inline-size: 500px;
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+
+}
+
+
+
+/* ABOUT ME */
 
 .aboutMeSection {
-    height: 200px;
-    background-color: coral;
+    background-color: rgba(27, 23, 26);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.aboutMePicture{
+.aboutMePicture {
     background-color: aqua;
-    
-
+    display: inline-block;
 }
 
-.aboutMePicture img{
-    height: 300px;
+.aboutMePicture img {
+    height: 400px;
 
 }
-
-
 
 .aboutMeInfo {
-    background-color: blue;
+    background-color: rgb(255, 255, 255, 0.1);
+    inline-size: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.aboutMeInfo h2,
+.aboutMeInfo p {
+    font-family: myFontJreeng;
+}
+
+.aboutMeInfo button {
+    font-family: myFontYikes;
+    padding: 15px;
+    background-color: rgba(27, 23, 26);
+    border: 2px solid coral;
+    color: white;
+}
+
+.aboutMeInfo button:hover {
+    background-color: rgba(27, 23, 26, 0.5);
+    font-size: medium;
+}
+
+
+/* MY PORJECTS */
+
+#myProjectsSection {
+    background-color: rgb(98, 135, 139);
+    height: 100vh;
+}
+
+#myProjectsSection img {
+    height: 200px;
+}
+
+#myProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.myProjectsGridContent {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.myProjectsGridContent p {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* CONTACT FORM */
+
+#contactFormSection {
+    background-color: rgb(98, 99, 139);
+    height: 500px;
+}
+
+#contactFormBox {
     height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contactForm {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactForm input {
+    inline-size: 150px;
+    height: 50px;
 }
