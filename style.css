@@ -172,27 +172,122 @@ https://www.user.com/en
 /* CONTACT FORM */
 
 #contactFormSection {
-    background-color: rgb(98, 99, 139);
-    height: 500px;
+    background-color: rgba(27, 23, 26);
+    height: 800px;
+    padding: 100px;
 }
 
 #contactFormBox {
     height: 400px;
+    width: 800px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.257);
+}
+
+#contactFormBox > h2{
+    color: coral;
 }
 
 #contactForm {
-
     display: flex;
+    width: 780px;
     flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 #contactForm input {
-    inline-size: 150px;
+    inline-size: 380px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    color: coral;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#contactForm input::placeholder{
+    color: rgba(255, 127, 80, 0.5);
+}
+#contactForm input:focus{
+    outline: none;
+    
+}
+
+#formMessageText{
+    width: 780px;
+    resize: none;
+    border-color: silver;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: transparent;
+    color: coral;
+}
+
+#formMessageText::placeholder{
+    color: rgba(255, 127, 80, 0.5);
+}
+
+#formMessageText:focus{
+    outline: none;
+}
+
+#contactForm input:nth-last-child(1){
+    width: 200px;
+    border: 2px solid silver;
+    background-color: rgba(255, 127, 80, 1);
+    color: black;
+}
+
+#contactForm input:nth-last-child(1):hover{
+    width: 200px;
+    border: 2px solid silver;
+    background-color: rgba(255, 127, 80, 0.5);
+    color: black;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: red;
+    height: 100px;
+}
+
+
+footer hr{
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#footerContact{
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+#line{
+    border: 1px solid;
+}
+
+#footerContact p{
+    display: flex;
+}
+
+#copyrightInfo{
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
