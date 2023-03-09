@@ -10,6 +10,11 @@ https://www.user.com/en
     padding: 0;
 }
 
+body {
+    background-color: rgba(27, 23, 26);
+    ;
+}
+
 @font-face {
     font-family: myFontJreeng;
     src: url(/fonts/Jreeng.ttf);
@@ -23,18 +28,14 @@ https://www.user.com/en
 
 /* NAVIGATION MENU */
 
-header {
-    position: sticky;
-    top: 0px;
-}
-
 .navMenu {
     height: 10vh;
+    position: absolute;
+    left: 50%;
+    right: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(27, 23, 26, 0.5);
-
 }
 
 .navMenuList {
@@ -56,7 +57,7 @@ header {
     font-family: myFontJreeng;
     color: coral;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -70,13 +71,12 @@ header {
 /* MAIN PAGE */
 
 .mainPage {
-    background-image: url(/images/temporaryBackground_v1.1.png);
+    background-image: url(/images/temporaryBackground_v1.2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 100vh;
+    height: 100vh;
     background-attachment: scroll;
-    margin-top: -100px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -115,9 +115,28 @@ header {
 
 /* ABOUT ME */
 
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutMeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #ff7f50;
+}
+
+#aboutMeTitle h1 {
+    background-color: red;
+    font-size: 30px;
+    color: white;
+}
+
 .aboutMeSection {
-    background-color: rgba(27, 23, 26);
-    height: 100vh;
+    background-color: #ff7f50;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,13 +149,13 @@ header {
 }
 
 .aboutMePicture img {
-    height: 400px;
+    height: 700px;
 
 }
 
 .aboutMeInfo {
     background-color: rgb(255, 255, 255, 0.1);
-    inline-size: 400px;
+    inline-size: 800px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -166,19 +185,33 @@ header {
 
 /* MY PORJECTS */
 
-#myProjectsSection {
-    background-color: rgb(98, 135, 139);
+#myProjects {
+    background-color: rgba(27, 23, 26);
     height: 100vh;
 }
 
+#myProjectsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 10vh;
+}
+
+#myProjectsTitle h2 {
+    background-color: red;
+    font-size: 30px;
+    color: white;
+}
+
 #myProjectsSection img {
-    height: 200px;
+    height: 400px;
 }
 
 #myProjectsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-items: center;
     align-content: space-evenly;
@@ -205,15 +238,37 @@ header {
 
 /* CONTACT FORM */
 
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff7f50;
+}
+
+#contactForm svg {
+    background-color: ;
+}
+
+#contactTitle {
+    margin-top: 50px;
+}
+
+#contactTitle h2 {
+    background-color: red;
+    font-size: 30px;
+    color: white;
+}
+
+
 #contactFormSection {
-    background-color: rgba(27, 23, 26);
-    height: 800px;
+    background-color: #ff7f50;
+    height: 700px;
     padding: 100px;
 }
 
 #contactFormBox {
     height: 400px;
-    width: 800px;
+    width: 60vw;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -222,14 +277,15 @@ header {
     text-align: center;
     flex-direction: column;
     gap: 20px;
-    background-color: rgba(255, 255, 255, 0.257);
+    background-color: #1b171a;
+    border-radius: 20px;
 }
 
 #contactFormBox>h2 {
     color: coral;
 }
 
-#contactForm {
+#contactFormData {
     display: flex;
     width: 780px;
     flex-wrap: wrap;
@@ -237,7 +293,7 @@ header {
 
 }
 
-#contactForm input {
+#contactFormData input {
     inline-size: 380px;
     height: 40px;
     border: none;
@@ -248,11 +304,11 @@ header {
     padding-left: 10px;
 }
 
-#contactForm input::placeholder {
+#contactFormData input::placeholder {
     color: rgba(255, 127, 80, 0.5);
 }
 
-#contactForm input:focus {
+#contactFormData input:focus {
     outline: none;
 
 }
@@ -276,14 +332,14 @@ header {
     outline: none;
 }
 
-#contactForm input:nth-last-child(1) {
+#contactFormData input:nth-last-child(1) {
     width: 200px;
     border: 2px solid silver;
     background-color: rgba(255, 127, 80, 1);
     color: black;
 }
 
-#contactForm input:nth-last-child(1):hover {
+#contactFormData input:nth-last-child(1):hover {
     width: 200px;
     border: 2px solid silver;
     background-color: rgba(255, 127, 80, 0.5);
@@ -294,10 +350,10 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: red;
+    background-color: #1b171a;
     height: 100px;
+    color: coral;
 }
-
 
 footer hr {
     width: 400px;
@@ -326,4 +382,4 @@ footer hr {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}Ŕ

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,154 @@
     <link rel="stylesheet" href="/playground/playgroundCSS.css">
     <title>PLAYGROUND</title>
 </head>
+
 <body>
-    
+    <!-- NAVIGATION MENU-->
 
-    <div id="animationTest">
-        <div class="animation1">
+    <header>
+        <nav class="navMenu">
+            <ul class="navMenuList">
+                <li><a href="">aboutMe</a></li>
+                <li><a href="">myProjects</a></li>
+                <li><a href="">callMeMaybe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Page-->
+
+    <section class="mainPage">
+        <div class="mainPageBottomInfo">
+            <hr>
+            <p>Welcome to the jungle &#128018</p>
+            <hr>
         </div>
-      </div>
+
+    </section>
+
+
+    <!-- About Me-->
+
+
+    <section class="aboutMe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+            <path fill="#ff7f50" fill-opacity="1"
+                d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,224C840,213,960,139,1080,117.3C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+        </svg>
+        <div id="aboutMeTitle">
+            <h1>About me</h1>
+        </div>
+
+        <div class="aboutMeSection">
+            <div class="aboutMePicture">
+                <img src="/images/temporaryLogo.png" alt="Photo of me">
+            </div>
+            <div class="aboutMeInfo">
+                <h2>Who I am?</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur sunt alias dolorem, deserunt
+                    optio cumque
+                    quis delectus repellat, quasi accusamus quas impedit beatae inventore porro rerum tenetur
+                    laudantium. Impedit,
+                    aliquam?
+                </p>
+                <button>Work with me</button>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+            <path fill="#ff7f50" fill-opacity="1"
+                d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,224C840,213,960,139,1080,117.3C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="myProjects">
+
+        <div id="myProjectsTitle">
+            <h2>myProjects</h2>
+        </div>
+
+        <div id="myProjectsSection">
+            <div id="myProjectsGrid">
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectOne/">Projekt 1</a>
+                </div>
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectTwo/">Projekt 2</a>
+                </div>
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectThree/">Projekt 3</a>
+                </div>
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectFour/">Projekt 4</a>
+                </div>
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectFive/">Projekt 5</a>
+                </div>
+                <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
+                    <a href="/portfolioProjects/projectSix/">Projekt 6</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT FORM -->
+
+    <section id="contactForm">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#1b171a" fill-opacity="1"
+                d="M0,192L34.3,176C68.6,160,137,128,206,128C274.3,128,343,160,411,160C480,160,549,128,617,138.7C685.7,149,754,203,823,192C891.4,181,960,107,1029,74.7C1097.1,43,1166,53,1234,69.3C1302.9,85,1371,107,1406,117.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+        </svg>
+        <div id="contactTitle">
+            <h2>Contact Form</h2>
+        </div>
+
+        <div id="contactFormSection">
+            <div id="contactFormBox">
+                <form action="" id="contactFormData">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Website Name">
+                    <textarea name="" id="formMessageText" rows="5" placeholder="Write Your Message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#1b171a" fill-opacity="1"
+                d="M0,192L34.3,176C68.6,160,137,128,206,128C274.3,128,343,160,411,160C480,160,549,128,617,138.7C685.7,149,754,203,823,192C891.4,181,960,107,1029,74.7C1097.1,43,1166,53,1234,69.3C1302.9,85,1371,107,1406,117.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div id="footerContact">
+            <p>Mail</p>
+            <p>GitHub</p>
+            <p>Discord</p>
+        </div>
+
+        <hr id="line">
+        <div id="copyrightInfo">
+            <p>Copyright © 2023 LionMonkey</p>
+        </div>
+
+    </footer>
 
 
 
 
 
-      
 
 
 
@@ -39,7 +175,10 @@
 
 
 
-    
-    <script src="/playground/playgroundJS.js"></script>
+
+
+
 </body>
+<script src="/playground/playgroundJS.js"></script>
+
 </html>
