@@ -4,9 +4,12 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(27, 23, 26);
-    ;
 }
 
 @font-face {
@@ -37,14 +40,18 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 80px;
-
 }
 
 .navMenuList li {
     list-style-type: none;
+    display: block;
+    width: 190px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-content: center;
     padding: 5px;
     margin: 10px;
-
 }
 
 .navMenuList a {
@@ -52,14 +59,14 @@ body {
     color: coral;
     text-decoration: none;
     font-size: 30px;
-
+    display: block;
+    text-align: center;
 }
 
 .navMenuList a:hover {
     color: rgb(123, 63, 42);
     text-decoration: underline;
 }
-
 
 
 /* MAIN PAGE */
@@ -69,7 +76,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 90vh;
     background-attachment: scroll;
     display: flex;
     align-items: flex-end;
@@ -109,16 +116,18 @@ body {
 
 /* ABOUT ME */
 
+
+
 .aboutMe {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 #aboutMeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     background-color: #ff7f50;
 }
 
@@ -129,12 +138,13 @@ body {
 }
 
 .aboutMeSection {
-    background-color: #ff7f50;
-    height: 70vh;
+    background-color: coral;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 134px;
 }
 
 .aboutMePicture {
@@ -143,7 +153,7 @@ body {
 }
 
 .aboutMePicture img {
-    height: 700px;
+    height: 600px;
 
 }
 
@@ -174,6 +184,15 @@ body {
 .aboutMeInfo button:hover {
     background-color: rgba(27, 23, 26, 0.5);
     font-size: medium;
+}
+
+.custom-shape-divider-top-1678439679 {
+    background-color: coral;
+    margin-top: 150px;
+}
+
+.custom-shape-divider-bottom-1678440093 {
+    background-color: #1b171a;
 }
 
 
@@ -239,9 +258,6 @@ body {
     background-color: #ff7f50;
 }
 
-#contactForm svg {
-    background-color: ;
-}
 
 #contactTitle {
     margin-top: 50px;
