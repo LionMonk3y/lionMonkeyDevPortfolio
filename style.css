@@ -192,12 +192,12 @@ body {
     font-size: medium;
 }
 
-.custom-shape-divider-top-1678439679 {
+#shapeDividerTop {
     background-color: coral;
     margin-top: 150px;
 }
 
-.custom-shape-divider-bottom-1678440093 {
+#shapeDividerBottom {
     background-color: #1b171a;
 }
 
@@ -264,6 +264,10 @@ body {
     background-color: #ff7f50;
 }
 
+#contactForm>svg {
+    background-color: #1b171a;
+}
+
 #contactTitle {
     margin-top: 50px;
 }
@@ -276,9 +280,8 @@ body {
 
 
 #contactFormSection {
-    background-color: #ff7f50;
-    height: 700px;
-    padding: 100px;
+    margin-top: 50px;
+
 }
 
 #contactFormBox {
