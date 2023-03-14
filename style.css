@@ -120,6 +120,54 @@ body {
     margin-right: 10px;
 }
 
+.circle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+.circleLogo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url(/images/temporaryLogo.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.circleText {
+    color: coral;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.circleText span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
+
 /* ABOUT ME */
 
 
@@ -210,6 +258,7 @@ body {
 }
 
 #myProjectsTitle {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,6 +417,7 @@ body {
 /* FOOTER */
 
 footer {
+    margin-top: 20px;
     background-color: #1b171a;
     height: 100px;
     color: coral;
@@ -386,6 +436,7 @@ footer hr {
     justify-content: center;
     gap: 80px;
 }
+
 
 #line {
     border: 1px solid;
