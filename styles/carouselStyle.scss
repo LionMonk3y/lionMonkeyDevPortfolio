@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #carouselSection {
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    .carouselItems {
+      overflow: hidden;
+      width: auto;
+      position: relative;
+  
+      .carouselItem,
+      .carouselItemHidden {
+        display: none;
+      }
+  
+      .carouselItem {
+        img {
+          height: 500px;
+          border-radius: 10%;
+        }
+  
+        .carouselTextTitle {
+          margin: 20px 0px;
+          background-color: green;
+        }
+  
+        .carouselText {
+          font-family: fantasy;
+        }
+      }
+  
+      .carouselItemVisible {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: fadeVisibility 1s;
+      }
+    }
+    .carouselActions {
+      button {
+        border-radius: 50px;
+        border: solid 5px red;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  
+  
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+  

@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/styles/mainStyles.css">
+  <link rel="stylesheet" href="/styles/carouselStyle.css">
   <title>LionMonkey DEV Portfolio!</title>
 </head>
 
@@ -101,7 +102,53 @@
       <h2>myProjects</h2>
     </div>
 
-    <div id="myProjectsSection">
+    <div id="carouselSection">
+
+      <div class="carouselActions">
+        <button id="carouselButtonPrev" aria-label="Previous slide">
+          <</button>
+      </div>
+
+      <div class="carouselItems">
+        <div class="carouselItem carouselItemVisible">
+          <img src="/images/temporaryLogo.png" />
+
+          <h2 class="carouselTextTitle">Tytuł 1</h2>
+          <p class="carouselText">This is my ..... It allows to ... You also can use it as....</p>
+
+        </div>
+        <div class="carouselItem">
+          <img src="/images/temporaryLogo.png" />
+          <div id="carouselInfo">
+            <h2 class="carouselTextTitle">Tytuł 2</h2>
+            <p class="carouselText">To jest super</p>
+          </div>
+        </div>
+        <div class="carouselItem">
+          <img src="/images/temporaryLogo.png" />
+          <div id="carouselInfo">
+            <h2 class="carouselTextTitle">Tytuł 3</h2>
+            <p class="carouselText">To jest super</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carouselActions">
+        <button id="carouselButtonNext" aria-label="Next slide">></button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="myProjectsSection">
       <div id="myProjectsGrid">
         <div class="myProjectsGridContent"><img src="/images/temporaryLogo.png" alt="">
           <a href="/portfolioProjects/projectOne/">Projekt 1</a>
@@ -122,7 +169,7 @@
           <a href="/portfolioProjects/projectSix/">Projekt 6</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
 
@@ -181,6 +228,7 @@
 
 </body>
 
-<script src="/script.js"></script>
+<script src="/scripts/animatedCircle.js"></script>
+<script src="/scripts/projectsCarousel.js"></script>
 
 </html>

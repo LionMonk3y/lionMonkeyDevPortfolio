@@ -170,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin-top: 100px;
 }
 
 #aboutMeTitle {
@@ -236,7 +237,7 @@ body {
 
 #shapeDividerTop {
     background-color: coral;
-    margin-top: 150px;
+
 }
 
 #shapeDividerBottom {
@@ -249,6 +250,7 @@ body {
 #myProjects {
     background-color: rgba(27, 23, 26);
     height: 100vh;
+    margin-top: 134px;
 }
 
 #myProjectsTitle {
@@ -257,7 +259,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    margin-top: 10vh;
+
 }
 
 #myProjectsTitle h2 {
