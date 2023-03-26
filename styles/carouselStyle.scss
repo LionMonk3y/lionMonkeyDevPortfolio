@@ -1,68 +1,77 @@
+$myOrange: #ff8230;
+$myLightOrangeBackground: rgba(245, 179, 135, 0.8);
+$myBrown: #1b171a;
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  #carouselSection {
-    height: 1000px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  
-    .carouselItems {
-      overflow: hidden;
-      width: auto;
-      position: relative;
-  
-      .carouselItem,
-      .carouselItemHidden {
-        display: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#carouselSection {
+  height: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .carouselItems {
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    background-color: rgba(245, 179, 135, 0.2);
+
+    .carouselItem,
+    .carouselItemHidden {
+      display: none;
+    }
+
+    .carouselItem {
+      img {
+        height: 500px;
+        border-radius: 10%;
       }
-  
-      .carouselItem {
-        img {
-          height: 500px;
-          border-radius: 10%;
-        }
-  
-        .carouselTextTitle {
-          margin: 20px 0px;
-          background-color: green;
-        }
-  
-        .carouselText {
-          font-family: fantasy;
-        }
+
+      .carouselTextTitle {
+        margin: 20px 0px;
+        color: $myOrange;
+        font-family: myFontJreeng;
       }
-  
-      .carouselItemVisible {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        animation: fadeVisibility 1s;
+
+      .carouselText {
+        color: $myOrange;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding-bottom: 50px;
       }
     }
-    .carouselActions {
-      button {
-        border-radius: 50px;
-        border: solid 5px red;
-        font-weight: bold;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-      }
+
+    .carouselItemVisible {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeVisibility 1s;
     }
   }
-  
-  
-  @keyframes fadeVisibility {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      transform: opacity linear;
+  .carouselActions {
+    button {
+      border-radius: 50px;
+      border: solid 5px $myOrange;
+      background-color: $myBrown;
+      color: $myOrange;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
     }
   }
-  
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}

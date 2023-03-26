@@ -1,450 +1,381 @@
+$myOrange: #ff8230;
+$myLightOrangeBackground: rgba(245, 179, 135, 0.281);
+$myBrown: #1b171a;
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgba(27, 23, 26);
+  //   background-color: rgba(27, 23, 26);
+  background-color: $myBrown;
 }
 
 @font-face {
-    font-family: myFontJreeng;
-    src: url(/fonts/Jreeng.ttf);
+  font-family: myFontJreeng;
+  src: url(/fonts/Jreeng.ttf);
 }
 
 @font-face {
-    font-family: myFontYikes;
-    src: url(/fonts/YIKES!__.TTF);
+  font-family: myFontYikes;
+  src: url(/fonts/YIKES!__.TTF);
 }
 
+@font-face {
+  font-family: myFontTakeLooks;
+  src: url(/fonts/takeLooks.ttf);
+}
 
 /* NAVIGATION MENU */
 
 .navMenu {
-    height: 10vh;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 10vh;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navMenuList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
 }
 
 .navMenuList li {
-    list-style-type: none;
-    display: block;
-    width: 190px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-content: center;
-    padding: 5px;
-    margin: 10px;
+  list-style-type: none;
+  display: block;
+  width: 190px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-content: center;
+  padding: 5px;
+  margin: 10px;
 }
 
 .navMenuList a {
-    font-family: myFontJreeng;
-    color: coral;
-    text-decoration: none;
-    font-size: 30px;
-    display: block;
-    text-align: center;
+  font-family: myFontJreeng;
+  color: $myOrange;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  text-align: center;
 }
 
 .navMenuList a:hover {
-    color: rgb(123, 63, 42);
-    text-decoration: underline;
+  color: rgb(123, 63, 42);
+  text-decoration: underline;
 }
-
 
 /* MAIN PAGE */
 
 .mainPage {
-    background-image: url(/images/temporaryBackground_v1.2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 90vh;
-    background-attachment: scroll;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+  background-image: url(/images/temporaryBackground_v1.2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+  background-attachment: scroll;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .mainPageBottomInfo {
-    background-color: rgba(255, 255, 255, 0.121);
-    inline-size: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-
-
-    /* position: absolute;
-    bottom: 10px;
-    margin-left: 50%;
-    margin-right: 50%; */
-
+  background-color: rgba(255, 255, 255, 0.121);
+  inline-size: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .mainPageBottomInfo p {
-    color: coral;
-    text-align: center;
-    justify-content: center;
+  color: $myOrange;
+  text-align: center;
+  justify-content: center;
 }
 
-.mainPageBottomInfo>p {
-    display: inline-block;
+.mainPageBottomInfo > p {
+  display: inline-block;
 }
 
-.mainPageBottomInfo>hr {
-    display: inline-block;
-    width: 130px;
-    margin-left: 10px;
-    margin-right: 10px;
+.mainPageBottomInfo > hr {
+  display: inline-block;
+  width: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .circle {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
 }
 
 .circleLogo {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: url(/images/temporaryLogo.png);
-    background-size: cover;
-    border-radius: 50%;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url(/images/temporaryLogo.png);
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .circleText {
-    color: coral;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: rotateText 10s linear infinite;
+  color: $myOrange;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
 }
 
 @keyframes rotateText {
-    0% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(360deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .circleText span {
-    position: absolute;
-    left: 50%;
-    font-size: 1.2em;
-    transform-origin: 0 100px;
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
 }
 
 /* ABOUT ME */
 
-
-
 .aboutMe {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin-top: 100px;
-}
-
-#aboutMeTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff7f50;
-}
-
-#aboutMeTitle h1 {
-    background-color: red;
-    font-size: 30px;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 100px;
 }
 
 .aboutMeSection {
-    background-color: coral;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 100px;
-    padding-bottom: 134px;
+  background-color: $myOrange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+  padding-bottom: 134px;
 }
 
 .aboutMePicture {
-    background-color: aqua;
-    display: inline-block;
-}
-
-.aboutMePicture img {
+  display: inline-block;
+  img {
     height: 600px;
-
+  }
 }
 
 .aboutMeInfo {
-    background-color: rgb(255, 255, 255, 0.1);
-    inline-size: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-}
-
-.aboutMeInfo h2,
-.aboutMeInfo p {
+  background-color: $myLightOrangeBackground;
+  inline-size: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+  font-size: 25px;
+  color: $myBrown;
+  border-radius: 10px;
+  h2 {
     font-family: myFontJreeng;
-}
-
-.aboutMeInfo button {
+  }
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  button {
     font-family: myFontYikes;
     padding: 15px;
-    background-color: rgba(27, 23, 26);
-    border: 2px solid coral;
+    background-color: $myBrown;
+    border: none;
     color: white;
-}
-
-.aboutMeInfo button:hover {
-    background-color: rgba(27, 23, 26, 0.5);
-    font-size: medium;
+    &:hover {
+      background-color: rgba(27, 23, 26, 0.5);
+      font-size: medium;
+    }
+  }
 }
 
 #shapeDividerTop {
-    background-color: coral;
-
+  background-color: $myOrange;
 }
 
 #shapeDividerBottom {
-    background-color: #1b171a;
+  background-color: $myBrown;
 }
-
 
 /* MY PORJECTS */
 
 #myProjects {
-    background-color: rgba(27, 23, 26);
-    height: 100vh;
-    margin-top: 134px;
+  background-color: $myBrown;
+  height: 100vh;
+  margin-top: 134px;
 }
 
 #myProjectsTitle {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-
-}
-
-#myProjectsTitle h2 {
-    background-color: red;
-    font-size: 30px;
-    color: white;
-}
-
-#myProjectsSection img {
-    height: 400px;
-}
-
-#myProjectsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 80vh;
-    align-items: center;
-    justify-items: center;
-    align-content: space-evenly;
-    padding-right: 150px;
-    padding-left: 150px;
-}
-
-.myProjectsGridContent {
-    background-color: rgba(27, 23, 26, 0.5);
-    display: flex;
-    flex-direction: column;
-}
-
-.myProjectsGridContent a {
-    text-align: center;
-    margin: 20px;
-    text-decoration: none;
-    color: coral;
-}
-
-.myProjectsGridContent a:hover {
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  h2 {
+    font-size: 50px;
+    color: $myOrange;
+    font-family: myFontJreeng;
+  }
 }
 
 /* CONTACT FORM */
 
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ff7f50;
-}
-
-#contactForm>svg {
-    background-color: #1b171a;
-}
-
-#contactTitle {
-    margin-top: 50px;
-}
-
-#contactTitle h2 {
-    background-color: red;
-    font-size: 30px;
-    color: white;
-}
-
-
 #contactFormSection {
-    margin-top: 50px;
+  background-color: $myOrange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+#contactFormInfo {
+  width: 500px;
+  p {
+    font-size: 35px;
+    font-family: myFontJreeng;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+}
+
+#contactFormSVG {
+  margin-bottom: -5px;
 }
 
 #contactFormBox {
-    height: 400px;
-    width: 60vw;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #1b171a;
-    border-radius: 20px;
-}
-
-#contactFormBox>h2 {
-    color: coral;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
 }
 
 #contactFormData {
-    display: flex;
-    width: 780px;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-#contactFormData input {
+  display: flex;
+  width: 810px;
+  flex-wrap: wrap;
+  gap: 20px;
+  input {
     inline-size: 380px;
     height: 40px;
+    margin-bottom: 30px;
+    margin-right: 15px;
     border: none;
-    border-bottom: 2px solid silver;
+    border-bottom: 2px solid $myBrown;
     background-color: transparent;
-    color: coral;
-    border-radius: 10px;
-    padding-left: 10px;
-}
-
-#contactFormData input::placeholder {
-    color: rgba(255, 127, 80, 0.5);
+    color: $myBrown;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 25px;
+    &::placeholder {
+      color: $myBrown;
+    }
+  }
 }
 
 #contactFormData input:focus {
-    outline: none;
-
+  outline: none;
 }
 
 #formMessageText {
-    width: 780px;
-    resize: none;
-    border-color: silver;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    background-color: transparent;
-    color: coral;
-}
-
-#formMessageText::placeholder {
-    color: rgba(255, 127, 80, 0.5);
+  width: 780px;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid $myBrown;
+  background-color: transparent;
+  color: $myBrown;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  &::placeholder {
+    color: $myBrown;
+  }
 }
 
 #formMessageText:focus {
-    outline: none;
+  outline: none;
 }
 
-#contactFormData input:nth-last-child(1) {
-    width: 200px;
-    border: 2px solid silver;
-    background-color: rgba(255, 127, 80, 1);
-    color: black;
+#contactFormSubmit {
+  width: 30%;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid $myBrown;
+  border-radius: 8px;
+  background-color: $myOrange;
+  color: $myBrown;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  &:hover {
+    background-color: $myBrown;
+    color: $myOrange;
+  }
 }
-
-#contactFormData input:nth-last-child(1):hover {
-    width: 200px;
-    border: 2px solid silver;
-    background-color: rgba(255, 127, 80, 0.5);
-    color: black;
-}
-
 
 /* FOOTER */
 
 footer {
-    margin-top: 20px;
-    background-color: #1b171a;
-    height: 100px;
-    color: coral;
+  margin-top: 20px;
+  background-color: #c6179b00;
+  height: 100px;
+  color: $myOrange;
 }
 
 footer hr {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footerContact {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 
-
 #line {
-    border: 1px solid;
+  border: 1px solid;
 }
 
 #footerContact p {
-    display: flex;
+  display: flex;
 }
 
 #copyrightInfo {
-    height: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
