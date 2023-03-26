@@ -252,12 +252,13 @@ body {
 #contactFormSection {
   background-color: $myOrange;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 #contactFormInfo {
   width: 500px;
+    margin-right: 150px;
   p {
     font-size: 35px;
     font-family: myFontJreeng;
@@ -332,20 +333,21 @@ body {
   margin-top: 20px;
   border: 2px solid $myBrown;
   border-radius: 8px;
-  background-color: $myOrange;
-  color: $myBrown;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: $myBrown;
+  color: white;
+  font-family: myFontYikes;
   font-size: 25px;
   &:hover {
-    background-color: $myBrown;
-    color: $myOrange;
+    border-color: $myBrown;
+    background-color: $myOrange;
+    color: $myBrown;
   }
 }
 
 /* FOOTER */
 
 footer {
-  margin-top: 20px;
+  margin: 50px 0 30px;
   background-color: #c6179b00;
   height: 100px;
   color: $myOrange;

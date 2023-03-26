@@ -14,6 +14,7 @@
   overflow: hidden;
   width: auto;
   position: relative;
+  border-radius: 10%;
   background-color: rgba(245, 179, 135, 0.2);
 }
 #carouselSection .carouselItems .carouselItem,
@@ -26,6 +27,7 @@
 }
 #carouselSection .carouselItems .carouselItem .carouselTextTitle {
   margin: 20px 0px;
+  text-align: center;
   color: #ff8230;
   font-family: myFontJreeng;
 }
