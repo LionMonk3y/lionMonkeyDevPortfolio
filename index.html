@@ -7,33 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles/mainStyles.css">
   <link rel="stylesheet" href="/styles/carouselStyle.css">
+  <script defer src="/scripts/animatedCircle.js"></script>
+  <script defer src="/scripts/projectsCarousel.js"></script>
   <title>LionMonkey DEV Portfolio!</title>
 </head>
 
 <body>
+    
+  <!-- Main Page with Navigation Menu-->
+  
+  <section id="mainPage">
+    <header>
+      <nav id="navMenu">
+        <ul id="navMenuList">
+          <li><a href="#anchor1">aboutMe</a></li>
+          <li><a href="#anchor2">myProjects</a></li>
+          <li><a href="#anchor3">getInTouch</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- NAVIGATION MENU-->
-
-  <header>
-    <nav class="navMenu">
-      <ul class="navMenuList">
-        <li><a href="#shapeDividerTop">aboutMe</a></li>
-        <li><a href="#myProjectsTitle">myProjects</a></li>
-        <li><a href="#contactTitle">getInTouch</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <!-- Main Page-->
-
-  <section class="mainPage">
-
-    <div class="mainPageBottomInfo">
+    <!-- <div id="mainPageBottomInfo">
       <hr>
       <p>Welcome to the jungle &#128018</p>
       <hr>
-    </div>
+    </div> -->
 
     <div class="circle">
       <div class="circleLogo"></div>
@@ -47,7 +45,7 @@
 
   <!-- About Me-->
 
-
+  <div id="anchor1"></div>
   <section class="aboutMe">
 
     <div id="shapeDividerTop">
@@ -78,7 +76,8 @@
           laudantium. Impedit,
           aliquam?
         </p>
-        <button>Work with me</button>
+        <!-- <button class="superButtons">Work with me</button> -->
+        <button class="superButtons">Work with me!</button>
       </div>
     </div>
 
@@ -95,8 +94,9 @@
   </section>
 
   <!-- Projects -->
-
+  <div id="anchor2"></div>
   <section id="myProjects">
+
 
     <div id="myProjectsTitle">
       <h2>MY PROJECTS</h2>
@@ -141,23 +141,21 @@
 
 
   <!-- CONTACT FORM -->
-
+  <div id="anchor3"></div>
   <section id="contactForm">
-
-    <svg id="contactFormSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ff8230" fill-opacity="1"
-        d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,208C560,224,640,224,720,202.7C800,181,880,139,960,133.3C1040,128,1120,160,1200,160C1280,160,1360,128,1400,112L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-      </path>
-    </svg>
-    <div id="contactTitle">
-      <!-- <h2>Contact Form</h2> -->
-    </div>
+      d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,208C560,224,640,224,720,202.7C800,181,880,139,960,133.3C1040,128,1120,160,1200,160C1280,160,1360,128,1400,112L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+    </path>
+  </svg>
 
     <div id="contactFormSection">
       <div id="contactFormInfo">
-        <p>Do you have any questions?</p><br>
+        <p>Do you have <br> any questions?</p><br>
         <p>Reach me out!</p>
       </div>
+
       <div id="contactFormBox">
         <form action="" id="contactFormData">
           <input type="text" placeholder="First Name*">
@@ -165,8 +163,7 @@
           <input type="email" placeholder="Email Address*">
           <input type="text" placeholder="Subject*">
           <textarea name="" id="formMessageText" rows="5" placeholder="How can I help you?*"></textarea>
-          <!-- <input type="submit" value="Submit"> -->
-          <button id="contactFormSubmit">Submit</button>
+          <button id="contactFormSubmit" class="superButtons">Submit</button>
         </form>
       </div>
     </div>
@@ -199,8 +196,5 @@
 
 
 </body>
-
-<script src="/scripts/animatedCircle.js"></script>
-<script src="/scripts/projectsCarousel.js"></script>
 
 </html>

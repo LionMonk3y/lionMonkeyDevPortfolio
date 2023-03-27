@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  //   background-color: rgba(27, 23, 26);
   background-color: $myBrown;
 }
 
@@ -32,88 +31,80 @@ body {
   src: url(/fonts/takeLooks.ttf);
 }
 
-/* NAVIGATION MENU */
+/* MAIN PAGE with NAVIGATION MENU */
 
-.navMenu {
-  height: 10vh;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.navMenuList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 80px;
-}
-
-.navMenuList li {
-  list-style-type: none;
-  display: block;
-  width: 190px;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-content: center;
-  padding: 5px;
-  margin: 10px;
-}
-
-.navMenuList a {
-  font-family: myFontJreeng;
-  color: $myOrange;
-  text-decoration: none;
-  font-size: 30px;
-  display: block;
-  text-align: center;
-}
-
-.navMenuList a:hover {
-  color: rgb(123, 63, 42);
-  text-decoration: underline;
-}
-
-/* MAIN PAGE */
-
-.mainPage {
+#mainPage {
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 90vh;
-  background-attachment: scroll;
+  height: 100vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: $myLightOrangeBackground;
+    nav {
+      height: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
 }
 
-.mainPageBottomInfo {
-  background-color: rgba(255, 255, 255, 0.121);
-  inline-size: 500px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.mainPageBottomInfo p {
-  color: $myOrange;
-  text-align: center;
+#navMenuList {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+  li {
+    list-style-type: none;
+    display: block;
+    width: 190px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-content: center;
+    padding: 5px;
+    margin: 10px;
+  }
+  a {
+    font-family: myFontJreeng;
+    color: $myOrange;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    &:hover {
+      color: rgb(123, 63, 42);
+      text-decoration: underline;
+    }
+  }
 }
 
-.mainPageBottomInfo > p {
-  display: inline-block;
-}
-
-.mainPageBottomInfo > hr {
-  display: inline-block;
-  width: 130px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+// #mainPageBottomInfo {
+//   background-color: rgba(255, 255, 255, 0.121);
+//   inline-size: 500px;
+//   padding: 10px;
+//   position: relative;
+//   bottom: 0;
+//   p {
+//     color: $myOrange;
+//     text-align: center;
+//     justify-content: center;
+//     display: inline-block;
+//   }
+//   hr {
+//     display: inline-block;
+//     width: 130px;
+//     margin-left: 10px;
+//     margin-right: 10px;
+//   }
+// }
 
 .circle {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -144,6 +135,12 @@ body {
   width: 100%;
   height: 100%;
   animation: rotateText 15s linear infinite;
+  span {
+    position: absolute;
+    left: 50%;
+    font-size: 15px;
+    transform-origin: 0 100px;
+  }
 }
 
 @keyframes rotateText {
@@ -156,20 +153,13 @@ body {
   }
 }
 
-.circleText span {
-  position: absolute;
-  left: 50%;
-  font-size: 15px;
-  transform-origin: 0 100px;
-}
-
 /* ABOUT ME */
 
 .aboutMe {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin-top: 100px;
+
 }
 
 .aboutMeSection {
@@ -206,17 +196,32 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
-  button {
-    font-family: myFontYikes;
-    padding: 15px;
-    background-color: $myBrown;
-    border: none;
-    color: white;
+}
 
-    &:hover {
-      background-color: rgba(27, 23, 26, 0.5);
-      font-size: medium;
-    }
+.superButtons {
+  font-family: myFontYikes;
+  background-color: #fbeee0;
+  border: 4px solid #422800;
+  border-radius: 30px;
+  box-shadow: $myBrown 4px 4px 0 0;
+  color: $myBrown;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  &:hover {
+    background-color: $myBrown;
+    color: $myOrange;
+  }
+  &:active {
+    box-shadow: $myOrange 2px 2px 0 0;
+    transform: translate(2px, 2px);
   }
 }
 
@@ -232,15 +237,18 @@ body {
 
 #myProjects {
   background-color: $myBrown;
-  height: 100vh;
-  margin-top: 134px;
+  height: 70vh;
+}
+
+#anchor1, #anchor2{
+  margin-bottom: 15vh;
 }
 
 #myProjectsTitle {
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
   h2 {
     font-size: 50px;
     color: $myOrange;
@@ -250,6 +258,10 @@ body {
 
 /* CONTACT FORM */
 
+#contactForm svg{
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
 #contactFormSection {
   background-color: $myOrange;
   display: flex;
@@ -261,16 +273,15 @@ body {
   width: 500px;
   margin-right: 150px;
   p {
-    font-size: 35px;
+    font-size: 45px;
     font-family: myFontJreeng;
     text-transform: uppercase;
     padding-bottom: 20px;
+    letter-spacing: 10px;
+    line-height: 125%;
   }
 }
 
-#contactFormSVG {
-  margin-bottom: -5px;
-}
 
 #contactFormBox {
   height: 500px;
@@ -281,6 +292,13 @@ body {
   flex-direction: column;
   gap: 20px;
   border-radius: 20px;
+  background-color: $myLightOrangeBackground;
+  padding: 0px 35px;
+  button {
+    width: 30%;
+    margin-top: 20px;
+    font-size: 25px;
+  }
 }
 
 #contactFormData {
@@ -303,11 +321,10 @@ body {
     &::placeholder {
       color: $myBrown;
     }
+    &:focus {
+      outline: none;
+    }
   }
-}
-
-#contactFormData input:focus {
-  outline: none;
 }
 
 #formMessageText {
@@ -322,26 +339,8 @@ body {
   &::placeholder {
     color: $myBrown;
   }
-}
-
-#formMessageText:focus {
-  outline: none;
-}
-
-#contactFormSubmit {
-  width: 30%;
-  padding: 15px;
-  margin-top: 20px;
-  border: 2px solid $myBrown;
-  border-radius: 8px;
-  background-color: $myBrown;
-  color: white;
-  font-family: myFontYikes;
-  font-size: 25px;
-  &:hover {
-    border-color: $myBrown;
-    background-color: $myOrange;
-    color: $myBrown;
+  &:focus {
+    outline: none;
   }
 }
 

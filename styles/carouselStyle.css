@@ -11,9 +11,7 @@
   align-items: center;
 }
 #carouselSection .carouselItems {
-  overflow: hidden;
   width: auto;
-  position: relative;
   border-radius: 10%;
   background-color: rgba(245, 179, 135, 0.2);
 }
