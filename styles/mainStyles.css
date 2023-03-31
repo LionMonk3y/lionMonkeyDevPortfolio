@@ -24,7 +24,7 @@ body {
   font-family: myFontTakeLooks;
   src: url(/fonts/takeLooks.ttf);
 }
-/* MAIN PAGE with NAVIGATION MENU */
+/* Main Page with Navigation Menu */
 #mainPage {
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
