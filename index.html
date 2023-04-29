@@ -32,162 +32,304 @@
 
   <body>
     <!-- Main Page with Navigation Menu-->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+      <div id="center" class="container">
+        <a href="#" class="navbar-brand">LionMonkeyDev.</a>
 
-    <section id="mainPage">
-      <header>
-        <nav id="navMenu">
-          <ul id="navMenuList">
-            <li><a href="#aboutMeTitle">aboutMe</a></li>
-            <li><a href="#anchor2">myProjects</a></li>
-            <li><a href="#anchor3">getInTouch</a></li>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#anchor1" class="nav-link">aboutMe</a>
+            </li>
+            <li class="nav-item">
+              <a href="#anchor2" class="nav-link">myProjects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#anchor3" class="nav-link">getInTouch</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-
-      <div class="circle">
-        <div class="circleLogo"></div>
-        <div class="circleText">
-          <p>
-            LionMonkey&#8594;&#8201;Scroll down&#8594;&#8201;Learn
-            more&#8594;&#8201;
-          </p>
         </div>
       </div>
+    </nav>
+    
+    <section class="mainPage">
+      <div class="container"></div>
     </section>
-
-    <!-- About Me-->
-
+    
     <div id="anchor1"></div>
-    <section class="aboutMe">
-      <!-- <div id="shapeDividerTop">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" fill="#1b171a"
-        preserveAspectRatio="none">
+    <!-- About Me-->
+    <div id="aboutMeDeviderTop">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
         <path
+          class="shape-fill"
           d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
+        ></path>
       </svg>
-
-    </div> -->
-
-      <div id="aboutMeTitle">
-        <!-- <h1>About me</h1> -->
-      </div>
-
-      <div class="aboutMeSection">
-        <div class="aboutMePicture">
-          <img src="/images/temporaryLogo.png" alt="Photo of me" />
+    </div>
+    
+    <section id="aboutMe">
+      <div class="aboutMeSection container">
+        <div class="row">
+          <div class="aboutMePicture col-lg-5">
+            <img
+            src="/images/temporaryLogo.png"
+            class="img-fluid"
+            alt="Photo of me"
+            />
+          </div>
+          <div class="aboutMeInfo col-lg-7">
+            <div class="aboutMeInfoBckgr">
+              <h1>Who am I?</h1>
+              <p>
+                <b>I'm Jewgienij</b> known as <b>LionMonkeyDev</b>, a Frontend
+                Developer with a passion for creating digital experiences that
+                are as beautiful as they are functional. With each new
+                challenge, I gain valuable experience and knowledge that I can
+                apply to future projects.
+                <b>I am confident in my ability to overcome obstacles</b> and
+                deliver results that exceed expectations.
+              </p>
+              <p>
+                Are you looking for a Frontend Developer who is both skilled and
+                fun to work with? Look no further.
+                <b>Let's team up and create something amazing together!</b>
+              </p>
+              <div id="button1">
+                <button class="superButtons">Work with me!</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="aboutMeInfo">
-          <h2>Who am I?</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            sunt alias dolorem, deserunt optio cumque quis delectus repellat,
-            quasi accusamus quas impedit beatae inventore porro rerum tenetur
-            laudantium. Impedit, aliquam?
-          </p>
-          <!-- <button class="superButtons">Work with me</button> -->
-          <button class="superButtons">Work with me!</button>
-        </div>
       </div>
+    </section>
+  
 
-      <div id="shapeDividerBottom">
-        <!-- <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" fill="#ff8230"
-        preserveAspectRatio="none">
+    <div id="aboutMeDeviderBot">
+      <svg
+      data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
         <path
+          class="shape-fill"
           d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
-      </svg> -->
-      </div>
-    </section>
-
-    <!-- Projects -->
+        ></path>
+      </svg>
+    </div>
     <div id="anchor2"></div>
+    
+    <!-- My Projects -->
+
     <section id="myProjects">
-      <div id="myProjectsTitle">
-        <h2>MY PROJECTS</h2>
-      </div>
-
-      <div id="carouselSection">
-        <div class="carouselActions">
-          <button id="carouselButtonPrev" aria-label="Previous slide"><</button>
+      <div id="myProjectsTitle">MY PROJECTS</div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="carInd active smallNav"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="smallNav"
+          ></button>
         </div>
 
-        <div class="carouselItems">
-          <div class="carouselItem carouselItemVisible">
-            <img src="/images/temporaryLogo.png" />
-
-            <h2 class="carouselTextTitle">Title 1</h2>
-            <p class="carouselText">
-              This is my ..... It allows to ... You also can use it as....
-            </p>
-          </div>
-          <div class="carouselItem">
-            <img src="/images/temporaryLogo.png" />
-            <div id="carouselInfo">
-              <h2 class="carouselTextTitle">Title 2</h2>
-              <p class="carouselText">
-                This is my ..... It allows to ... You also can use it as....
-              </p>
+        <div class="carousel-inner py-4">
+          <div class="carousel-item active">
+            <div class="container my-4">
+              <div
+                class="card mb-3 filter mx-auto pt-3 pb-3"
+                style="padding: 0%; border: none; width: 75%"
+              >
+                <div class="row g-0 py-4">
+                  <div
+                    class="imgSec col-12 col-md-5 d-flex"
+                    style="position: relative; height: 25vh"
+                  >
+                    <div
+                      class="imgHero my-auto"
+                      style="
+                        transform: translateX(-10%);
+                        width: 100%;
+                        height: 100%;
+                      "
+                    >
+                      <div class="imageFirst h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">Amazing project 1</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua Egestas purus viverra accumsan in nisl nisi
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <button
+                          class="superButtons col-md-3 mt-1 mt-md-0"
+                          type="submit"
+                        >
+                          Check it
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="carouselItem">
-            <img src="/images/temporaryLogo.png" />
-            <div id="carouselInfo">
-              <h2 class="carouselTextTitle">Title 3</h2>
-              <p class="carouselText">
-                This is my ..... It allows to ... You also can use it as....
-              </p>
+          <div class="carousel-item active">
+            <div class="container my-4">
+              <div
+                class="card mb-3 filter mx-auto pt-3 pb-3"
+                style="padding: 0%; border: none; width: 75%"
+              >
+                <div class="row g-0 py-4">
+                  <div
+                    class="imgSec col-12 col-md-5 d-flex"
+                    style="position: relative; height: 25vh"
+                  >
+                    <div
+                      class="imgHero my-auto"
+                      style="
+                        transform: translateX(-10%);
+                        width: 100%;
+                        height: 100%;
+                      "
+                    >
+                      <div class="imageSecond h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">Amazing project 2</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua Egestas purus viverra accumsan in nisl nisi
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <button
+                          class="superButtons col-md-3 mt-1 mt-md-0"
+                          type="submit"
+                        >
+                          Check it
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="carouselActions">
-          <button id="carouselButtonNext" aria-label="Next slide">></button>
         </div>
       </div>
     </section>
-
+    
     <!-- CONTACT FORM -->
     <div id="anchor3"></div>
+    <div class="contactFormDeviderTop">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="shape-fill"
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        ></path>
+      </svg>
+    </div>
+
     <section id="contactForm">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ff8230" fill-opacity="1"
-      d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,208C560,224,640,224,720,202.7C800,181,880,139,960,133.3C1040,128,1120,160,1200,160C1280,160,1360,128,1400,112L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-    </path>
-  </svg> -->
+      <div class="container">
+        <div class="row col">
+          <div class="formLeftText col-lg-5">
+            <p>
+              Do you have <br />
+              any questions? <br />
+              Reach me out!
+            </p>
+          </div>
 
-      <div id="contactFormSection">
-        <div id="contactFormInfo">
-          <p>
-            Do you have <br />
-            any questions?
-          </p>
-          <br />
-          <p>Reach me out!</p>
-        </div>
-
-        <div id="contactFormBox">
-          <form action="" id="contactFormData">
-            <input type="text" placeholder="First Name*" />
-            <input type="text" placeholder="Company Website" />
-            <input type="email" placeholder="Email Address*" />
-            <input type="text" placeholder="Subject*" />
-            <textarea
-              name=""
-              id="formMessageText"
-              rows="5"
-              placeholder="How can I help you?*"
-            ></textarea>
-            <button id="contactFormSubmit" class="superButtons">Submit</button>
-          </form>
+          <div class="col-lg-7">
+            <div id="contactFormBox">
+              <form action="" id="contactFormData" class="container-sm">
+                <div class="row-sm">
+                  <input type="text" placeholder="First Name*" class="col" />
+                  <input
+                    type="text"
+                    placeholder="Company Website"
+                    class="col"
+                  />
+                </div>
+                <div class="row-sm">
+                  <input
+                    type="email"
+                    placeholder="Email Address*"
+                    class="col"
+                  />
+                  <input type="text" placeholder="Subject*" class="col" />
+                </div>
+                <textarea
+                  name=""
+                  id="formMessageText"
+                  rows="5"
+                  placeholder="How can I help you?*"
+                  class="row col"
+                ></textarea>
+                <button id="contactFormSubmit" class="superButtons row">
+                  Submit
+                </button>
+                <div id="margin30"></div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-      <path fill="#ff8230" fill-opacity="1"
-        d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,208C560,224,640,224,720,202.7C800,181,880,139,960,133.3C1040,128,1120,160,1200,160C1280,160,1360,128,1400,112L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
-      </path>
-    </svg> -->
     </section>
+
+    <div class="contactFormDeviderBot">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="shape-fill"
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        ></path>
+      </svg>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -203,7 +345,7 @@
         /></a>
       </div>
 
-      <hr id="line" />
+      <hr id="footerDevider" />
       <div id="copyrightInfo">
         <p>Copyright © 2023 LionMonkey</p>
       </div>

@@ -1,6 +1,6 @@
-$myOrange: #ff8230;
+$myOrange: rgb(206, 93, 30);
 $myLightOrangeBackground: rgba(245, 179, 135, 0.281);
-$myBrown: #1b171a;
+$myBrown: rgb(28, 20, 27);
 
 * {
   box-sizing: border-box;
@@ -33,7 +33,28 @@ body {
 
 /* Main Page with Navigation Menu */
 
-#mainPage {
+.navbar {
+  background-color: $myBrown;
+  color: $myOrange;
+  a {
+    color: $myOrange;
+  }
+  .nav-item {
+    justify-content: center;
+    text-align: center;
+    color: $myOrange;
+    font-family: myFontJreeng;
+    font-size: 24px;
+    .nav-link {
+      color: $myOrange;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.mainPage {
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,140 +64,267 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  header {
-    position: fixed;
-    width: 100%;
-    background-color: $myLightOrangeBackground;
-    nav {
-      height: 7vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-  }
-}
-
-#navMenuList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 80px;
-  li {
-    list-style-type: none;
-    display: block;
-    width: 190px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-content: center;
-    padding: 5px;
-    margin: 10px;
-  }
-  a {
-    font-family: myFontJreeng;
-    color: $myOrange;
-    text-decoration: none;
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    &:hover {
-      color: rgb(123, 63, 42);
-      text-decoration: underline;
-    }
-  }
-}
-
-
-.circle {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 100px;
-  bottom: 100px;
-}
-
-.circleLogo {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background: url(/images/temporaryLogo.png);
-  background-size: cover;
-  border-radius: 50%;
-}
-
-.circleText {
-  color: $myOrange;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: rotateText 15s linear infinite;
-  span {
-    position: absolute;
-    left: 50%;
-    font-size: 15px;
-    transform-origin: 0 100px;
-  }
-}
-
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 /* ABOUT ME */
 
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+#anchor1 {
+  height: 100px;
+  background-color: $myBrown;
 }
 
-.aboutMeSection {
+#aboutMeDeviderTop {
+  width: 100%;
+  svg {
+    position: relative;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    background-color: $myOrange;
+  }
+  .shape-fill {
+    fill: $myBrown;
+  }
+}
+
+#aboutMe {
+  height: 700px;
+  background-color: $myOrange;
+  display: flex;
+  justify-content: center;
+  .aboutMeSection {
+    display: flex;
+    justify-content: center;
+    .aboutMePicture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 500px;
+        border-radius: 30px;
+      }
+    }
+    .aboutMeInfo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .aboutMeInfoBckgr {
+        background-color: $myLightOrangeBackground;
+        padding: 40px 20px;
+        font-size: 24px;
+        color: $myBrown;
+        border-radius: 30px;
+      }
+      h1 {
+        font-family: myFontJreeng;
+        font-size: 34px;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px 0px;
+        margin: 0;
+      }
+      #button1 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#aboutMeDeviderBot {
+  width: 100%;
+  svg {
+    width: calc(100% + 1.3px);
+    height: 100px;
+    background-color: $myBrown;
+  }
+  .shape-fill {
+    fill: $myOrange;
+  }
+}
+#anchor2 {
+}
+/* MY PORJECTS */
+
+#myProjectsTitle {
+  background-color: $myBrown;
+  color: $myOrange;
+  font-family: myFontJreeng;
+  text-align: center;
+
+  font-size: 24px;
+}
+
+#myProjects {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $myBrown;
+  #myProjectsTitle {
+    font-size: 42px;
+  }
+  .smallNav {
+    background-color: $myOrange;
+  }
+  .card {
+    background-color: $myOrange;
+  }
+  input:focus {
+    outline: none !important;
+  }
+  .imageFirst {
+    background-image: url(/images/temporaryLogo.png);
+    background-size: cover;
+  }
+  .imageSecond {
+    background-image: url(/images/temporaryLogo.png);
+    background-size: cover;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+}
+
+/* CONTACT FORM */
+#anchor3{
+  height: 100px;
+  background-color: $myBrown;
+}
+.contactFormDeviderTop {
+  width: 100%;
+  svg {
+    width: calc(100% + 1.3px);
+    height: 100px;
+    background-color: $myOrange;
+  }
+  .shape-fill {
+    fill: $myBrown;
+  }
+}
+
+#contactForm {
+  height: 600px;
   background-color: $myOrange;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding-top: 100px;
-  padding-bottom: 134px;
-}
-
-.aboutMePicture {
-  display: inline-block;
-  img {
-    height: 600px;
-  }
-}
-
-.aboutMeInfo {
-  background-color: $myLightOrangeBackground;
-  inline-size: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 20px;
-  font-size: 25px;
-  color: $myBrown;
-  border-radius: 10px;
-  h2 {
+  .formLeftText {
+    font-size: 45px;
     font-family: myFontJreeng;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+  #contactFormBox {
+    border-radius: 20px;
+    background-color: $myLightOrangeBackground;
+    padding: 0px 40px;
+    input {
+      width: 49%;
+      margin: 30px 0px 0 0;
+      border: none;
+      border-bottom: 2px solid $myBrown;
+      background-color: transparent;
+      color: $myBrown;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 20px;
+    }
+    input::-moz-placeholder {
+      color: $myBrown;
+    }
+    input::placeholder {
+      color: $myBrown;
+    }
+    input:focus {
+      outline: none;
+    }
+    #formMessageText {
+      width: 99%;
+      resize: none;
+      border: none;
+      border-bottom: 2px solid $myBrown;
+      background-color: transparent;
+      color: $myBrown;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 20px;
+      margin: 30px 20px 0 0;
+      &::-moz-placeholder {
+        color: $myBrown;
+      }
+      &::placeholder {
+        color: $myBrown;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    #contactFormSubmit {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+    #margin30 {
+      height: 30px;
+    }
   }
 }
+
+.contactFormDeviderBot {
+  width: 100%;
+  svg {
+    width: calc(100% + 1.3px);
+    height: 100px;
+    background-color: $myBrown;
+  }
+  .shape-fill {
+    fill: $myOrange;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: $myBrown;
+  color: $myOrange;
+  #footerContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  #footerDevider {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+  }
+  #copyrightInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* IMPORTANT */
 
 .superButtons {
   font-family: myFontYikes;
@@ -205,295 +353,98 @@ body {
   }
 }
 
-#shapeDividerTop {
-  background-color: $myOrange;
-}
-
-#shapeDividerBottom {
-  background-color: $myBrown;
-}
-
-/* MY PORJECTS */
-
-#myProjects {
-  background-color: $myBrown;
-  height: 70vh;
-}
-
-#anchor1,
-#anchor2 {
-  margin-bottom: 15vh;
-}
-
-#myProjectsTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h2 {
-    font-size: 50px;
-    color: $myOrange;
-    font-family: myFontJreeng;
-  }
-}
-
-#carouselSection {
-  height: 1000px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .carouselItems {
-    width: auto;
-    border-radius: 10%;
-    background-color: rgba(245, 179, 135, 0.2);
-
-    .carouselItem,
-    .carouselItemHidden {
-      display: none;
-    }
-
-    .carouselItem {
-      img {
-        height: 500px;
-        border-radius: 10%;
-      }
-
-      .carouselTextTitle {
-        margin: 20px 0px;
-        text-align: center;
-        color: $myOrange;
-        font-family: myFontJreeng;
-      }
-
-      .carouselText {
-        color: $myOrange;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        padding-bottom: 50px;
-      }
-    }
-
-    .carouselItemVisible {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: fadeVisibility 1s;
+@media screen and (max-width: 992px) {
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+      margin: auto;
+      display: block;
+      margin-bottom: 50px;
     }
   }
-  .carouselActions {
-    button {
-      border-radius: 50px;
-      border: solid 5px $myOrange;
-      background-color: $myBrown;
-      color: $myOrange;
-      font-weight: bold;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
+  .aboutMeInfo {
+    p {
+      font-size: 16px;
     }
   }
-}
-
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  }
-}
-
-/* CONTACT FORM */
-
-#contactForm svg {
-  margin-bottom: -20px;
-  margin-top: -20px;
-}
-#contactFormSection {
-  background-color: $myOrange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#contactFormInfo {
-  width: 500px;
-  margin-right: 150px;
-  p {
-    font-size: 45px;
-    font-family: myFontJreeng;
-    text-transform: uppercase;
+  #contactForm .formLeftText {
+    font-size: 16px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #contactForm #contactFormBox input {
+    font-size: 16px;
+    width: 100%;
+  }
+  .imgHero {
+    height: 100%;
+    justify-content: center;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .imgHero {
+    transform: translateX(0%) !important;
+    transform: translateY(-28%) !important;
+    height: 35%;
+  }
+  .card {
+    width: 100% !important;
+  }
+  .buttonCard > .superButtons {
+    width: 200px;
+  }
+}
+
+@media (max-width: 657px) {
+  #contactForm .formLeftText {
+    font-size: 16px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     letter-spacing: 10px;
     line-height: 125%;
   }
-}
-
-#contactFormBox {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 20px;
-  background-color: $myLightOrangeBackground;
-  padding: 0px 35px;
-  button {
-    width: 30%;
-    margin-top: 20px;
-    font-size: 25px;
+  #contactForm #contactFormBox input {
+    font-size: 16px;
+    width: 100%;
   }
 }
 
-#contactFormData {
-  display: flex;
-  width: 810px;
-  flex-wrap: wrap;
-  gap: 20px;
-  input {
-    inline-size: 380px;
-    height: 40px;
-    margin-bottom: 30px;
-    margin-right: 15px;
-    border: none;
-    border-bottom: 2px solid $myBrown;
-    background-color: transparent;
-    color: $myBrown;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 25px;
-    &::placeholder {
-      color: $myBrown;
-    }
-    &:focus {
-      outline: none;
-    }
+@media (max-width: 575.98px) {
+  .imgHero {
+    transform: translateX(0%) !important;
+    transform: translateY(-28%) !important;
+    height: 100%;
+    // padding-right: 20px;
+    // padding-left: 20px;
   }
-}
-
-#formMessageText {
-  width: 780px;
-  resize: none;
-  border: none;
-  border-bottom: 2px solid $myBrown;
-  background-color: transparent;
-  color: $myBrown;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 25px;
-  &::placeholder {
-    color: $myBrown;
+  .card {
+    width: 100% !important;
+    height: 60% !important;
   }
-  &:focus {
-    outline: none;
+  .buttonCard {
+    padding-left: 4%;
+    padding-right: 4%;
   }
-}
-
-/* FOOTER */
-
-footer {
-  margin: 50px 0 30px;
-  background-color: #c6179b00;
-  height: 100px;
-  color: $myOrange;
-}
-
-footer hr {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footerContact {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-}
-
-#line {
-  border: 1px solid;
-}
-
-#footerContact p {
-  display: flex;
-}
-
-#copyrightInfo {
-  height: 49px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 1100px) {
-  #mainPage {
-    background-image: url(/images/temporaryBackground_v1.2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  // .imgSec {
+  //     height: 100% !important;
+  // }
+  .imageFirst {
+    width: 100%;
   }
-  .aboutMePicture {
-    img {
-      height: 500px;
-      margin-left: 40px;
-    }
-  }
-
   .aboutMeInfo {
-    margin-right: 40px;
-  }
-}
-
-#myProjects {
-  height: 1000px;
-}
-
-#carouselSection {
-  height: 500px;
-
-  .carouselItems {
-    width: 100px;
-
-    .carouselItem {
-      img {
-        height: 300px;
-      }
-    }
-  }
-}
-
-// #contactFormSection{
-//   width: 1000px;
-//   height: 100px;
-// }
-
-// #contactFormInfo{
-//   width: 200px;
-// }
-
-// #contactFormBox{
-//   width: 200px;
-//   height: 1000px;
-// }
-// #contactFormData{
-//   width: 500px;
-// }
-
-// #formMessageText{
-//   width: 300px;
-// }
-
-@media only screen and (max-width: 700px) {
-  #mainPage {
-    background-image: none;
+    height: 800px;
   }
 }
