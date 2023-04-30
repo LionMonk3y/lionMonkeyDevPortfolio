@@ -60,12 +60,11 @@
         </div>
       </div>
     </nav>
-    
+
     <section class="mainPage">
-      <div class="container"></div>
+      <div class="fullBckgr"></div>
     </section>
-    
-    <div id="anchor1"></div>
+
     <!-- About Me-->
     <div id="aboutMeDeviderTop">
       <svg
@@ -80,18 +79,18 @@
         ></path>
       </svg>
     </div>
-    
+
     <section id="aboutMe">
-      <div class="aboutMeSection container">
+      <div id="anchor1" class="aboutMeSection container">
         <div class="row">
-          <div class="aboutMePicture col-lg-5">
+          <div class="aboutMePicture col-xl-5">
             <img
-            src="/images/temporaryLogo.png"
-            class="img-fluid"
-            alt="Photo of me"
+              src="/images/temporaryLogo.png"
+              class="img-fluid"
+              alt="Photo of me"
             />
           </div>
-          <div class="aboutMeInfo col-lg-7">
+          <div class="aboutMeInfo col-xl-7 col-sm-12">
             <div class="aboutMeInfoBckgr">
               <h1>Who am I?</h1>
               <p>
@@ -116,11 +115,10 @@
         </div>
       </div>
     </section>
-  
 
     <div id="aboutMeDeviderBot">
       <svg
-      data-name="Layer 1"
+        data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
@@ -131,12 +129,11 @@
         ></path>
       </svg>
     </div>
-    <div id="anchor2"></div>
-    
+
     <!-- My Projects -->
 
     <section id="myProjects">
-      <div id="myProjectsTitle">MY PROJECTS</div>
+      <div id="anchor2" class="myProjectsTitle">MY PROJECTS</div>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -192,10 +189,7 @@
                         magna aliqua Egestas purus viverra accumsan in nisl nisi
                       </p>
                       <div class="buttonCard" style="margin-top: 3%">
-                        <button
-                          class="superButtons col-md-3 mt-1 mt-md-0"
-                          type="submit"
-                        >
+                        <button class="superButtons mt-1 mt-md-0" type="submit">
                           Check it
                         </button>
                       </div>
@@ -236,10 +230,7 @@
                         magna aliqua Egestas purus viverra accumsan in nisl nisi
                       </p>
                       <div class="buttonCard" style="margin-top: 3%">
-                        <button
-                          class="superButtons col-md-3 mt-1 mt-md-0"
-                          type="submit"
-                        >
+                        <button class="superButtons mt-1 mt-md-0" type="submit">
                           Check it
                         </button>
                       </div>
@@ -252,7 +243,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CONTACT FORM -->
     <div id="anchor3"></div>
     <div class="contactFormDeviderTop">
@@ -269,12 +260,12 @@
       </svg>
     </div>
 
-    <section id="contactForm">
+    <section class="contactForm">
       <div class="container">
         <div class="row col">
           <div class="formLeftText col-lg-5">
             <p>
-              Do you have <br />
+              Do you have <br class="deleteBr" />
               any questions? <br />
               Reach me out!
             </p>
@@ -297,14 +288,14 @@
                     placeholder="Email Address*"
                     class="col"
                   />
-                  <input type="text" placeholder="Subject*" class="col" />
+                  <input type="text" placeholder="Subject*" class="col-6" />
                 </div>
                 <textarea
                   name=""
                   id="formMessageText"
                   rows="5"
                   placeholder="How can I help you?*"
-                  class="row col"
+                  class="row col-12"
                 ></textarea>
                 <button id="contactFormSubmit" class="superButtons row">
                   Submit

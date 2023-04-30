@@ -10,6 +10,7 @@ $myBrown: rgb(28, 20, 27);
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -54,24 +55,16 @@ body {
   }
 }
 
-.mainPage {
+.fullBckgr{
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  background-color: $myBrown;
 }
 
 /* ABOUT ME */
-
-#anchor1 {
-  height: 100px;
-  background-color: $myBrown;
-}
 
 #aboutMeDeviderTop {
   width: 100%;
@@ -146,17 +139,14 @@ body {
     fill: $myOrange;
   }
 }
-#anchor2 {
-}
 /* MY PORJECTS */
 
-#myProjectsTitle {
+.myProjectsTitle {
   background-color: $myBrown;
   color: $myOrange;
   font-family: myFontJreeng;
   text-align: center;
-
-  font-size: 24px;
+  font-size: 50px;
 }
 
 #myProjects {
@@ -165,9 +155,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: $myBrown;
-  #myProjectsTitle {
-    font-size: 42px;
-  }
   .smallNav {
     background-color: $myOrange;
   }
@@ -200,10 +187,7 @@ body {
 }
 
 /* CONTACT FORM */
-#anchor3{
-  height: 100px;
-  background-color: $myBrown;
-}
+
 .contactFormDeviderTop {
   width: 100%;
   svg {
@@ -216,14 +200,14 @@ body {
   }
 }
 
-#contactForm {
-  height: 600px;
+.contactForm {
+  height: 500px;
   background-color: $myOrange;
   display: flex;
   justify-content: center;
   align-items: center;
   .formLeftText {
-    font-size: 45px;
+    font-size: 40px;
     font-family: myFontJreeng;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -280,7 +264,6 @@ body {
     }
     #contactFormSubmit {
       margin-top: 30px;
-      font-size: 24px;
     }
     #margin30 {
       height: 30px;
@@ -328,6 +311,7 @@ footer {
 
 .superButtons {
   font-family: myFontYikes;
+  width: fit-content;
   background-color: #fbeee0;
   border: 4px solid #422800;
   border-radius: 30px;
@@ -336,7 +320,7 @@ footer {
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 18px;
   line-height: 50px;
   text-align: center;
@@ -353,45 +337,83 @@ footer {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .aboutMe {
+@media (max-width: 1199px) {
+  #aboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 1100px;
     img {
-      width: 50%;
-      margin: auto;
-      display: block;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      height: 600px !important;
     }
   }
-  .aboutMeInfo {
-    p {
-      font-size: 16px;
+  #contactForm {
+    .formLeftText {
+      font-size: 30px;
     }
   }
-  #contactForm .formLeftText {
-    font-size: 16px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+}
+
+@media (max-width: 998px) {
+  // .mainPage {
+  //   background-size: contain;
+  // }
+  #aboutMe {
+    img {
+      height: 500px !important;
+    }
   }
-  #contactForm #contactFormBox input {
-    font-size: 16px;
-    width: 100%;
+  #myProjects {
+    .imgHero {
+      height: 100%;
+      justify-content: center;
+    }
+    .card {
+      width: 100% !important;
+    }
   }
-  .imgHero {
-    height: 100%;
-    justify-content: center;
-  }
-  .card {
-    width: 100% !important;
+  .contactForm {
+    height: 500px;
+    .deleteBr {
+      display: none;
+    }
+    .formLeftText {
+      font-size: 20px;
+      padding: 0;
+      line-height: 150%;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    #contactFormBox {
+      input {
+        font-size: 16px;
+      }
+      textarea {
+        font-size: 16px !important;
+      }
+    }
   }
 }
 
 @media (max-width: 767.98px) {
+  #aboutMe {
+    height: 800px;
+    img{
+      height: 300px !important;
+    }
+    h1 {
+      font-size: 20px !important;
+    }
+    p{
+      font-size: 16px !important;
+    }
+  }
+  #myProjects{
+    .myProjectsTitle{
+      font-size: 30px;
+    }
+  }
   .imgHero {
     transform: translateX(0%) !important;
     transform: translateY(-28%) !important;
@@ -400,12 +422,26 @@ footer {
   .card {
     width: 100% !important;
   }
-  .buttonCard > .superButtons {
-    width: 200px;
+  #contactForm {
+    height: 600px;
+    .formLeftText {
+      font-size: 18px !important;
+    }
+    #contactFormBox {
+      input {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 @media (max-width: 657px) {
+  // .mainPage {
+  //   height: 65vh;
+  // }
+  #myProjects {
+    height: 900px;
+  }
   #contactForm .formLeftText {
     font-size: 16px;
     padding-bottom: 20px;
@@ -444,7 +480,6 @@ footer {
   .imageFirst {
     width: 100%;
   }
-  .aboutMeInfo {
-    height: 800px;
-  }
 }
+
+@media (max-width: 520px) 

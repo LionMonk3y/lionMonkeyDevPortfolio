@@ -46,24 +46,16 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.mainPage {
+.fullBckgr {
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* ABOUT ME */
-#anchor1 {
-  height: 100px;
   background-color: rgb(28, 20, 27);
 }
 
+/* ABOUT ME */
 #aboutMeDeviderTop {
   width: 100%;
 }
@@ -138,12 +130,12 @@ body {
 }
 
 /* MY PORJECTS */
-#myProjectsTitle {
+.myProjectsTitle {
   background-color: rgb(28, 20, 27);
   color: rgb(206, 93, 30);
   font-family: myFontJreeng;
   text-align: center;
-  font-size: 24px;
+  font-size: 50px;
 }
 
 #myProjects {
@@ -152,9 +144,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(28, 20, 27);
-}
-#myProjects #myProjectsTitle {
-  font-size: 42px;
 }
 #myProjects .smallNav {
   background-color: rgb(206, 93, 30);
@@ -186,11 +175,6 @@ body {
 }
 
 /* CONTACT FORM */
-#anchor3 {
-  height: 100px;
-  background-color: rgb(28, 20, 27);
-}
-
 .contactFormDeviderTop {
   width: 100%;
 }
@@ -203,15 +187,15 @@ body {
   fill: rgb(28, 20, 27);
 }
 
-#contactForm {
-  height: 600px;
+.contactForm {
+  height: 500px;
   background-color: rgb(206, 93, 30);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contactForm .formLeftText {
-  font-size: 45px;
+.contactForm .formLeftText {
+  font-size: 40px;
   font-family: myFontJreeng;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -221,12 +205,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-#contactForm #contactFormBox {
+.contactForm #contactFormBox {
   border-radius: 20px;
   background-color: rgba(245, 179, 135, 0.281);
   padding: 0px 40px;
 }
-#contactForm #contactFormBox input {
+.contactForm #contactFormBox input {
   width: 49%;
   margin: 30px 0px 0 0;
   border: none;
@@ -236,16 +220,16 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
-#contactForm #contactFormBox input::-moz-placeholder {
+.contactForm #contactFormBox input::-moz-placeholder {
   color: rgb(28, 20, 27);
 }
-#contactForm #contactFormBox input::placeholder {
+.contactForm #contactFormBox input::placeholder {
   color: rgb(28, 20, 27);
 }
-#contactForm #contactFormBox input:focus {
+.contactForm #contactFormBox input:focus {
   outline: none;
 }
-#contactForm #contactFormBox #formMessageText {
+.contactForm #contactFormBox #formMessageText {
   width: 99%;
   resize: none;
   border: none;
@@ -256,20 +240,19 @@ body {
   font-size: 20px;
   margin: 30px 20px 0 0;
 }
-#contactForm #contactFormBox #formMessageText::-moz-placeholder {
+.contactForm #contactFormBox #formMessageText::-moz-placeholder {
   color: rgb(28, 20, 27);
 }
-#contactForm #contactFormBox #formMessageText::placeholder {
+.contactForm #contactFormBox #formMessageText::placeholder {
   color: rgb(28, 20, 27);
 }
-#contactForm #contactFormBox #formMessageText:focus {
+.contactForm #contactFormBox #formMessageText:focus {
   outline: none;
 }
-#contactForm #contactFormBox #contactFormSubmit {
+.contactForm #contactFormBox #contactFormSubmit {
   margin-top: 30px;
-  font-size: 24px;
 }
-#contactForm #contactFormBox #margin30 {
+.contactForm #contactFormBox #margin30 {
   height: 30px;
 }
 
@@ -311,6 +294,8 @@ footer #copyrightInfo {
 /* IMPORTANT */
 .superButtons {
   font-family: myFontYikes;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #fbeee0;
   border: 4px solid #422800;
   border-radius: 30px;
@@ -319,7 +304,7 @@ footer #copyrightInfo {
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 18px;
   line-height: 50px;
   text-align: center;
@@ -338,42 +323,68 @@ footer #copyrightInfo {
   transform: translate(2px, 2px);
 }
 
-@media screen and (max-width: 992px) {
-  .aboutMe {
+@media (max-width: 1199px) {
+  #aboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 1100px;
   }
-  .aboutMe img {
-    width: 50%;
-    margin: auto;
-    display: block;
-    margin-bottom: 50px;
-  }
-  .aboutMeInfo p {
-    font-size: 16px;
+  #aboutMe img {
+    margin-bottom: 30px;
+    height: 600px !important;
   }
   #contactForm .formLeftText {
-    font-size: 16px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    font-size: 30px;
   }
-  #contactForm #contactFormBox input {
-    font-size: 16px;
-    width: 100%;
+}
+@media (max-width: 998px) {
+  #aboutMe img {
+    height: 500px !important;
   }
-  .imgHero {
+  #myProjects .imgHero {
     height: 100%;
     justify-content: center;
   }
-  .card {
+  #myProjects .card {
     width: 100% !important;
+  }
+  .contactForm {
+    height: 500px;
+  }
+  .contactForm .deleteBr {
+    display: none;
+  }
+  .contactForm .formLeftText {
+    font-size: 20px;
+    padding: 0;
+    line-height: 150%;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .contactForm #contactFormBox input {
+    font-size: 16px;
+  }
+  .contactForm #contactFormBox textarea {
+    font-size: 16px !important;
   }
 }
 @media (max-width: 767.98px) {
+  #aboutMe {
+    height: 800px;
+  }
+  #aboutMe img {
+    height: 300px !important;
+  }
+  #aboutMe h1 {
+    font-size: 20px !important;
+  }
+  #aboutMe p {
+    font-size: 16px !important;
+  }
+  #myProjects .myProjectsTitle {
+    font-size: 30px;
+  }
   .imgHero {
     transform: translateX(0%) !important;
     transform: translateY(-28%) !important;
@@ -382,11 +393,20 @@ footer #copyrightInfo {
   .card {
     width: 100% !important;
   }
-  .buttonCard > .superButtons {
-    width: 200px;
+  #contactForm {
+    height: 600px;
+  }
+  #contactForm .formLeftText {
+    font-size: 18px !important;
+  }
+  #contactForm #contactFormBox input {
+    font-size: 16px;
   }
 }
 @media (max-width: 657px) {
+  #myProjects {
+    height: 900px;
+  }
   #contactForm .formLeftText {
     font-size: 16px;
     padding-bottom: 20px;
@@ -418,8 +438,5 @@ footer #copyrightInfo {
   }
   .imageFirst {
     width: 100%;
-  }
-  .aboutMeInfo {
-    height: 800px;
   }
 }/*# sourceMappingURL=mainStyles.css.map */
