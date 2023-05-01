@@ -1,0 +1,103 @@
+$myOrange: rgb(206, 93, 30);
+$myLightOrangeBackground: rgba(245, 179, 135, 0.281);
+$myBrown: rgb(28, 20, 27);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $myBrown !important;
+  padding-top: 100px;
+}
+
+@font-face {
+  font-family: myFontJreeng;
+  src: url(/fonts/Jreeng.ttf);
+}
+
+.navbar {
+  background-color: $myBrown;
+  color: $myOrange;
+  a {
+    color: $myOrange;
+  }
+  .nav-item {
+    justify-content: center;
+    text-align: center;
+    color: $myOrange;
+    font-family: myFontJreeng;
+    font-size: 24px;
+    .nav-link {
+      color: $myOrange;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.row {
+  padding-bottom: 50px;
+}
+#projectsGrid {
+  height: 500px;
+  background-color: $myBrown;
+}
+
+.webStyle {
+  background-color: $myLightOrangeBackground;
+  height: 400px;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+.grayTop {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 20px;
+  background-color: gray;
+  .colorButtons {
+  }
+}
+.whiteBckgr {
+  height: 180px;
+  background-color: $myBrown;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  img {
+    height: 180px;
+
+    // max-height: auto;
+    // background-size: cover;
+  }
+}
+
+.projectDescription {
+  padding: 20px 0px;
+  color: $myOrange;
+  h2 {
+    font-family: myFontJreeng;
+  }
+}
+@media (max-width: 992px){
+    .row{
+        margin: 0;
+    }
+    .webStyle {
+        margin-bottom: 50px;
+}}
+//     .projectImg{
+
+//         img{
+//         height: 300px;
+//     }}
+// }

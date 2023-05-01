@@ -10,7 +10,6 @@ $myBrown: rgb(28, 20, 27);
 
 html {
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -55,7 +54,7 @@ body {
   }
 }
 
-.fullBckgr{
+.fullBckgr {
   background-image: url(/images/temporaryBackground_v1.2.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -399,18 +398,18 @@ footer {
 @media (max-width: 767.98px) {
   #aboutMe {
     height: 800px;
-    img{
+    img {
       height: 300px !important;
     }
     h1 {
       font-size: 20px !important;
     }
-    p{
+    p {
       font-size: 16px !important;
     }
   }
-  #myProjects{
-    .myProjectsTitle{
+  #myProjects {
+    .myProjectsTitle {
       font-size: 30px;
     }
   }
@@ -482,4 +481,5 @@ footer {
   }
 }
 
-@media (max-width: 520px) 
+@media (max-width: 520px) {
+}
