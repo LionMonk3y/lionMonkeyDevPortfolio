@@ -42,12 +42,15 @@ body {
 .navbar .nav-item .nav-link {
   color: rgb(206, 93, 30);
 }
+.navbar img {
+  height: 20px;
+}
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .fullBckgr {
-  background-image: url(/images/temporaryBackground_v1.2.png);
+  background-image: url(/images/lmd_main_background.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
