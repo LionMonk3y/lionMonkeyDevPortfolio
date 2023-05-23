@@ -21,8 +21,8 @@ body {
   src: url(/fonts/YIKES!__.TTF);
 }
 @font-face {
-  font-family: myFontTakeLooks;
-  src: url(/fonts/takeLooks.ttf);
+  font-family: myFontShort;
+  src: url(/fonts/ShortStack-Regular.ttf);
 }
 /* Main Page with Navigation Menu */
 .navbar {
@@ -36,8 +36,8 @@ body {
   justify-content: center;
   text-align: center;
   color: rgb(206, 93, 30);
-  font-family: myFontJreeng;
-  font-size: 24px;
+  font-family: myFontShort;
+  font-size: 16px;
 }
 .navbar .nav-item .nav-link {
   color: rgb(206, 93, 30);
@@ -73,7 +73,7 @@ body {
 }
 
 #aboutMe {
-  height: 700px;
+  height: 500px;
   background-color: rgb(206, 93, 30);
   display: flex;
   justify-content: center;
@@ -88,7 +88,7 @@ body {
   align-items: center;
 }
 #aboutMe .aboutMeSection .aboutMePicture img {
-  height: 500px;
+  height: 400px;
   border-radius: 30px;
 }
 #aboutMe .aboutMeSection .aboutMeInfo {
@@ -99,19 +99,18 @@ body {
 #aboutMe .aboutMeSection .aboutMeInfo .aboutMeInfoBckgr {
   background-color: rgba(245, 179, 135, 0.281);
   padding: 40px 20px;
-  font-size: 24px;
   color: rgb(28, 20, 27);
   border-radius: 30px;
 }
 #aboutMe .aboutMeSection .aboutMeInfo h1 {
   font-family: myFontJreeng;
-  font-size: 34px;
+  font-size: 24px;
   margin: 0;
   padding-bottom: 10px;
 }
 #aboutMe .aboutMeSection .aboutMeInfo p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: justify;
   padding: 10px 0px;
   margin: 0;
@@ -138,7 +137,7 @@ body {
   color: rgb(206, 93, 30);
   font-family: myFontJreeng;
   text-align: center;
-  font-size: 50px;
+  font-size: 34px;
 }
 
 #myProjects {
@@ -153,6 +152,16 @@ body {
 }
 #myProjects .card {
   background-color: rgb(206, 93, 30);
+}
+#myProjects .card .card-title {
+  font-family: myFontJreeng;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+#myProjects .card .card-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
 }
 #myProjects input:focus {
   outline: none !important;
@@ -198,8 +207,9 @@ body {
   align-items: center;
 }
 .contactForm .formLeftText {
-  font-size: 40px;
+  font-size: 34px;
   font-family: myFontJreeng;
+  color: rgb(28, 20, 27);
   text-transform: uppercase;
   padding-bottom: 20px;
   letter-spacing: 10px;
@@ -221,7 +231,7 @@ body {
   background-color: transparent;
   color: rgb(28, 20, 27);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 .contactForm #contactFormBox input::-moz-placeholder {
   color: rgb(28, 20, 27);
@@ -240,7 +250,7 @@ body {
   background-color: transparent;
   color: rgb(28, 20, 27);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   margin: 30px 20px 0 0;
 }
 .contactForm #contactFormBox #formMessageText::-moz-placeholder {
@@ -280,10 +290,11 @@ footer #footerContact {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 20px;
+  margin-bottom: -10px;
 }
 footer #footerDevider {
-  width: 400px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid;
@@ -292,6 +303,8 @@ footer #copyrightInfo {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 10px;
+  margin-top: -10px;
 }
 
 /* IMPORTANT */
@@ -309,7 +322,7 @@ footer #copyrightInfo {
   font-weight: 600;
   font-size: 16px;
   padding: 0 18px;
-  line-height: 50px;
+  line-height: 30px;
   text-align: center;
   text-decoration: none;
   -webkit-user-select: none;
