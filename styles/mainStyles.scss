@@ -172,6 +172,10 @@ body {
         sans-serif;
       font-size: 16px;
     }
+    a {
+      text-decoration: none;
+      color: $myBrown;
+    }
   }
   input:focus {
     outline: none !important;
@@ -181,10 +185,18 @@ body {
     background-size: cover;
   }
   .imageSecond {
+    background-image: url(/images/wp_website.png);
+    background-size: cover;
+  }
+  .imageThird {
     background-image: url(/images/temporaryLogo.png);
     background-size: cover;
   }
-  
+  .imageFourth {
+    background-image: url(/images/wp_website.png);
+    background-size: cover;
+  }
+
   @keyframes float {
     0% {
       transform: translatey(0px);

@@ -1,4 +1,6 @@
-$myOrange: rgb(206, 93, 30);
+$myOrange: rgb(223, 117, 56);
+// rgb(206, 93, 30)
+
 $myLightOrangeBackground: rgba(245, 179, 135, 0.281);
 $myBrown: rgb(28, 20, 27);
 
@@ -50,207 +52,181 @@ body {
   }
 }
 
-.row {
-  padding-bottom: 50px;
-}
 #projectsGrid {
   height: 500px;
   background-color: $myBrown;
-}
-
-.webStyle {
-  background-color: $myLightOrangeBackground;
-  height: 400px;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 15px;
-}
-.grayTop {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 20px;
-  background-color: gray;
-  .colorButtons {
+  .row {
+    padding-bottom: 50px;
   }
-}
-.whiteBckgr {
-  height: 180px;
-  background-color: $myBrown;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  text-align: center;
-  img {
-    height: 180px;
-
-    // max-height: auto;
-    // background-size: cover;
+  .webStyle {
+    background-color: $myLightOrangeBackground;
+    height: 400px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
   }
-}
-
-.projectDescription {
-  padding: 20px 0px;
-  color: $myOrange;
-  h2{
-    font-family: myFontJreeng;
-    font-size: 24px;
-    margin: 0;
-    padding-bottom: 10px;
+  .grayTop {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 20px;
+    background-color: gray;
   }
-  p{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 16px;
-  }
-}
-@media (max-width: 992px){
-    .row{
-        margin: 0;
+  .linkToProject{
+    text-decoration: none;
+    .whiteBckgr {
+      height: 180px;
+      background-color: $myBrown;
+      text-align: center;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      img {
+        height: 200px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
     }
-    .webStyle {
-        margin-bottom: 50px;
-}}
-//     .projectImg{
+    .projectDescription {
+      margin-top: 20px;
+      padding: 20px 0px;
+      color: $myOrange;
+      h2 {
+        font-family: myFontJreeng;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+}
 
-//         img{
-//         height: 300px;
-//     }}
-// }
-
-
-
+@media (max-width: 992px) {
+  .row {
+    margin: 0;
+  }
+  .webStyle {
+    margin-bottom: 50px;
+  }
+}
 
 //Mac OS X Traffic Lights
-$close-red:                     #ff6159;
-$close-red-active:              #bf4942;
-$close-red-icon:                #4d0000;
-$close-red-icon-active:         #190000;
+$close-red: #ff6159;
+$close-red-active: #bf4942;
+$close-red-icon: #4d0000;
+$close-red-icon-active: #190000;
 
-$minimize-yellow:               #ffbd2e;
-$minimize-yellow-active:        #bf8e22;
-$minimize-yellow-icon:          #995700;
-$minimize-yellow-icon-active:   #592800;
+$minimize-yellow: #ffbd2e;
+$minimize-yellow-active: #bf8e22;
+$minimize-yellow-icon: #995700;
+$minimize-yellow-icon-active: #592800;
 
-$maximize-green:                #28c941;
-$maximize-green-active:         #1d9730;
-$maximize-green-icon:           #006500;
-$maximize-green-icon-active:    #003200;
+$maximize-green: #28c941;
+$maximize-green-active: #1d9730;
+$maximize-green-icon: #006500;
+$maximize-green-icon-active: #003200;
 
-$disabled-gray:                 #ddd;
+$disabled-gray: #ddd;
 
 .traffic-lights {
-    // position: absolute;
-    top: 1px;
-    left: 8px;
-
-    .focus &, &:hover, &:active {
-        > .traffic-light-close {
-            background-color: $close-red;
-
-            &:active:hover {
-                background-color: $close-red-active;
-            }
-        }
-        > .traffic-light-minimize {
-            background-color: $minimize-yellow;
-
-            &:active:hover {
-                background-color: $minimize-yellow-active;
-            }
-        }
-        > .traffic-light-maximize {
-            background-color: $maximize-green;
-
-            &:active:hover {
-                background-color: $maximize-green-active;
-            }
-        }
+  padding-left: 10px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .traffic-light-close {
+    background-color: $close-red;
+    &:active:hover {
+      background-color: $close-red-active;
     }
-
-    > .traffic-light {
-        &:before, &:after {
-            visibility: hidden;
-        }
+  }
+  .traffic-light-minimize {
+    background-color: $minimize-yellow;
+    &:active:hover {
+      background-color: $minimize-yellow-active;
     }
-
-    &:hover, &:active {
-        > .traffic-light {
-            &:before, &:after {
-                visibility: visible;
-            }
-        }
+  }
+  .traffic-light-maximize {
+    background-color: $maximize-green;
+    &:active:hover {
+      background-color: $maximize-green-active;
     }
+  }
 }
 
 .traffic-light {
-    border-radius: 100%;
-    padding: 0;
-    height: 12px;
-    width: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-sizing: border-box;
-    margin-right: 3.5px;
-    background-color: $disabled-gray;
-    position: relative;
-    outline: none;
-
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        border-radius: 1px;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+  border-radius: 100%;
+  padding: 0;
+  height: 12px;
+  width: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-right: 3.5px;
+  background-color: $disabled-gray;
+  position: relative;
+  outline: none;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-radius: 1px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &-close {
+    &:before,
+    &:after {
+      background-color: $close-red-icon;
+      width: 8px;
+      height: 1px;
     }
-
-    &-close {
-        &:before, &:after {
-            background-color: $close-red-icon;
-            width: 8px;
-            height: 1px;
-        }
-        &:before {
-            transform: rotate(45deg);// translate(-0.5px, -0.5px);
-        }
-        &:after {
-            transform: rotate(-45deg);// translate(0.5px, -0.5px);
-        }
-        &:active:hover:before, &:active:hover:after {
-            background-color: $close-red-icon-active;
-        }
+    &:before {
+      transform: rotate(45deg);
     }
-
-    &-minimize {
-        &:before {
-            background-color: $minimize-yellow-icon;
-            width: 8px;
-            height: 1px;
-            //transform: translateY(-0.5px);
-        }
-        &:active:hover:before {
-            background-color: $minimize-yellow-icon-active;
-        }
+    &:after {
+      transform: rotate(-45deg);
     }
-
-    &-maximize {
-        &:before {
-            background-color: $maximize-green-icon;
-            width: 6px;
-            height: 6px;
-        }
-        &:after {
-            background-color: $maximize-green;
-            width: 10px;
-            height: 2px;
-            transform: rotate(45deg);
-        }
-        &:active:hover:before {
-            background-color: $maximize-green-icon-active;
-        }
-        &:active:hover:after {
-            background-color: $maximize-green-active;
-        }
+    &:active:hover:before,
+    &:active:hover:after {
+      background-color: $close-red-icon-active;
     }
+  }
+  &-minimize {
+    &:before {
+      background-color: $minimize-yellow-icon;
+      width: 8px;
+      height: 1px;
+      transform: translateY(-0.5px);
+    }
+    &:active:hover:before {
+      background-color: $minimize-yellow-icon-active;
+    }
+  }
+  &-maximize {
+    &:before {
+      background-color: $maximize-green-icon;
+      width: 6px;
+      height: 6px;
+    }
+    &:after {
+      background-color: $maximize-green;
+      width: 10px;
+      height: 2px;
+      transform: rotate(45deg);
+    }
+    &:active:hover:before {
+      background-color: $maximize-green-icon-active;
+    }
+    &:active:hover:after {
+      background-color: $maximize-green-active;
+    }
+  }
 }

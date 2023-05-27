@@ -163,6 +163,10 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
 }
+#myProjects .card a {
+  text-decoration: none;
+  color: rgb(28, 20, 27);
+}
 #myProjects input:focus {
   outline: none !important;
 }
@@ -171,7 +175,15 @@ body {
   background-size: cover;
 }
 #myProjects .imageSecond {
+  background-image: url(/images/wp_website.png);
+  background-size: cover;
+}
+#myProjects .imageThird {
   background-image: url(/images/temporaryLogo.png);
+  background-size: cover;
+}
+#myProjects .imageFourth {
+  background-image: url(/images/wp_website.png);
   background-size: cover;
 }
 @keyframes float {
