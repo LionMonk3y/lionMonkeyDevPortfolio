@@ -86,6 +86,9 @@ body {
   background-color: $myOrange;
   display: flex;
   justify-content: center;
+  #anchor1 {
+    scroll-margin-top: 150px;
+  }
   .aboutMeSection {
     display: flex;
     justify-content: center;
@@ -141,21 +144,22 @@ body {
   }
 }
 /* MY PORJECTS */
-
-.myProjectsTitle {
-  background-color: $myBrown;
-  color: $myOrange;
-  font-family: myFontJreeng;
-  text-align: center;
-  font-size: 34px;
-}
-
 #myProjects {
   height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $myBrown;
+  #anchor2 {
+    scroll-margin-top: 150px;
+  }
+  .myProjectsTitle {
+    background-color: $myBrown;
+    color: $myOrange;
+    font-family: myFontJreeng;
+    text-align: center;
+    font-size: 34px;
+  }
   .smallNav {
     background-color: $myOrange;
   }
@@ -181,7 +185,7 @@ body {
     outline: none !important;
   }
   .imageFirst {
-    background-image: url(/images/temporaryLogo.png);
+    background-image: url(/images/random_password_generator.png);
     background-size: cover;
   }
   .imageSecond {
@@ -211,7 +215,6 @@ body {
 }
 
 /* CONTACT FORM */
-
 .contactFormDeviderTop {
   width: 100%;
   svg {
@@ -223,13 +226,16 @@ body {
     fill: $myBrown;
   }
 }
-
+#anchor3 {
+  scroll-margin-top: 150px;
+}
 .contactForm {
   height: 500px;
   background-color: $myOrange;
   display: flex;
   justify-content: center;
   align-items: center;
+
   .formLeftText {
     font-size: 34px;
     font-family: myFontJreeng;
@@ -355,12 +361,12 @@ footer {
   text-decoration: none;
   user-select: none;
   touch-action: manipulation;
-  &:hover {
+  &:hover{
     background-color: $myBrown;
     color: $myOrange;
   }
   &:active {
-    box-shadow: $myOrange 2px 2px 0 0;
+    box-shadow: $myBrown 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
 }

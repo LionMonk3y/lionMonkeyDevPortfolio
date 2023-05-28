@@ -78,6 +78,9 @@ body {
   display: flex;
   justify-content: center;
 }
+#aboutMe #anchor1 {
+  scroll-margin-top: 150px;
+}
 #aboutMe .aboutMeSection {
   display: flex;
   justify-content: center;
@@ -132,20 +135,22 @@ body {
 }
 
 /* MY PORJECTS */
-.myProjectsTitle {
-  background-color: rgb(28, 20, 27);
-  color: rgb(206, 93, 30);
-  font-family: myFontJreeng;
-  text-align: center;
-  font-size: 34px;
-}
-
 #myProjects {
   height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(28, 20, 27);
+}
+#myProjects #anchor2 {
+  scroll-margin-top: 150px;
+}
+#myProjects .myProjectsTitle {
+  background-color: rgb(28, 20, 27);
+  color: rgb(206, 93, 30);
+  font-family: myFontJreeng;
+  text-align: center;
+  font-size: 34px;
 }
 #myProjects .smallNav {
   background-color: rgb(206, 93, 30);
@@ -171,7 +176,7 @@ body {
   outline: none !important;
 }
 #myProjects .imageFirst {
-  background-image: url(/images/temporaryLogo.png);
+  background-image: url(/images/random_password_generator.png);
   background-size: cover;
 }
 #myProjects .imageSecond {
@@ -209,6 +214,10 @@ body {
 }
 .contactFormDeviderTop .shape-fill {
   fill: rgb(28, 20, 27);
+}
+
+#anchor3 {
+  scroll-margin-top: 150px;
 }
 
 .contactForm {
@@ -347,7 +356,7 @@ footer #copyrightInfo {
   color: rgb(206, 93, 30);
 }
 .superButtons:active {
-  box-shadow: rgb(206, 93, 30) 2px 2px 0 0;
+  box-shadow: rgb(28, 20, 27) 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
