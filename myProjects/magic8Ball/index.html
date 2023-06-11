@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/myProjects/magic8Ball/magic8ball_styles.css" />
+  <script defer src="/myProjects/magic8Ball/magic8ball_script.js"></script>
+  <title>Magic 8 Ball</title>
+</head>
+
+<body>
+  <div class="description">
+    <p>Do you believe in destiny? Shake the Magic 8 Ball and see what awaits you! It holds the answers to all your most
+      pressing questions! Start by 'asking the ball' any 'yes' or 'no' question, then flip it to see your answer appear
+      in the window.</p>
+    <div>
+      <button onclick="animateBall()">Animate</button>
+      <button onclick="resetBall()">Reset</button>
+    </div>
+  </div>
+  <div class="box">
+    <div class="eightBall" id="ball">
+
+      <div class="front-side">
+        <span class="number">8</span>
+      </div>
+      <div class="back-side" id="response">
+        <!-- <span class="answerColor">
+        </span> -->
+
+      </div>
+    </div>
+
+    <div class="platform">
+      <div class="platform__cy top"></div>
+      <div class="platform__lec"></div>
+      <div class="platform__cy btm">
+
+      </div>
+      <div class="sphere-shadow"></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
