@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/myProjects/magic8Ball/magic8ball_styles.css"
+    />
+    <script defer src="/myProjects/magic8Ball/magic8ball_script.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <title>Magic 8 Ball</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/myProjects/magic8Ball/magic8ball_styles.css" />
-  <script defer src="/myProjects/magic8Ball/magic8ball_script.js"></script>
-  <title>Magic 8 Ball</title>
-</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+      <div id="center" class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><img src="/images/250x150.png" alt=""
+        /></a>
 
-<body>
-  <div class="description">
-    <p>Do you believe in destiny? Shake the Magic 8 Ball and see what awaits you! It holds the answers to all your most
-      pressing questions! Start by 'asking the ball' any 'yes' or 'no' question, then flip it to see your answer appear
-      in the window.</p>
-    <div>
-      <button onclick="animateBall()">Animate</button>
-      <button onclick="resetBall()">Reset</button>
-    </div>
-  </div>
-  <div class="box">
-    <div class="eightBall" id="ball">
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="front-side">
-        <span class="number">8</span>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/myProjects/allProjects/myProjects.html" class="nav-link"
+                >getBackToAllProjects</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="back-side" id="response">
-        <!-- <span class="answerColor">
+    </nav>
+
+    <div class="description">
+      <h1 id="title">Magic 8 Ball</h1>
+      <p>
+        Do you believe in destiny? Shake the Magic 8 Ball and see what awaits
+        you! It holds the answers to all your most pressing questions! Start by
+        'asking the ball' any 'yes' or 'no' question, then flip it to see your
+        answer appear in the window.
+      </p>
+      <div>
+        <button class="superButton" onclick="animateBall()">Animate</button>
+        <button class="superButton" onclick="resetBall()">Reset</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="eightBall" id="ball">
+        <div class="front-side">
+          <span class="number">8</span>
+        </div>
+        <div class="back-side" id="response">
+          <!-- <span class="answerColor">
         </span> -->
+        </div>
+      </div>
 
+      <div class="platform">
+        <div class="platform__cy top"></div>
+        <div class="platform__lec"></div>
+        <div class="platform__cy btm"></div>
+        <div class="sphere-shadow"></div>
       </div>
     </div>
-
-    <div class="platform">
-      <div class="platform__cy top"></div>
-      <div class="platform__lec"></div>
-      <div class="platform__cy btm">
-
-      </div>
-      <div class="sphere-shadow"></div>
-    </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>

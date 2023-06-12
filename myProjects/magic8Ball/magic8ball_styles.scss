@@ -1,3 +1,12 @@
+$myOrange: rgb(206, 93, 30);
+$myLightOrangeBackground: rgba(245, 179, 135, 0.281);
+$myBrown: rgb(28, 20, 27);
+
+@font-face {
+  font-family: myFontShort;
+  src: url(/fonts/ShortStack-Regular.ttf);
+}
+
 $gradation: linear-gradient(to right, #333333, #222222, #111111, #000000);
 
 // $gradation-sphere: radial-gradient(
@@ -20,20 +29,48 @@ $height: 30px;
   box-sizing: border-box;
 }
 
+.navbar {
+  background-color: $myBrown;
+  color: $myOrange;
+  a {
+    color: $myOrange;
+  }
+  .nav-item {
+    justify-content: center;
+    text-align: center;
+    color: $myOrange;
+    font-family: myFontShort;
+    font-size: 16px;
+    .nav-link {
+      color: $myOrange;
+    }
+  }
+  img {
+    height: 20px;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-color: rgb(227, 227, 227);
+  background-color: $myLightOrangeBackground !important;
   // background: linear-gradient(#e18c7e 54%, #b27175 54% 54.2%, #cbcbcb 54.2%);
   .description {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // height: 200px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin: 20px;
+    font-size: 12px;
+    color: $myBrown;
+    text-align: center;
   }
   p {
     width: 600px;
@@ -47,7 +84,7 @@ body {
   transform: translate(-50%, -80%);
   width: 400px;
   height: 400px;
-  background: black;
+  background: rgb(0, 0, 0);
   border-radius: 50%;
   animation: up-and-down 5s ease-in-out infinite alternate;
   display: flex;
@@ -281,3 +318,92 @@ body {
       rotate(0deg);
   }
 }
+
+.superButton {
+  font-family: myFontYikes;
+  width: fit-content;
+  background-color: $myLightOrangeBackground;
+  border: 4px solid #422800;
+  border-radius: 30px;
+  box-shadow: $myBrown 4px 4px 0 0;
+  color: $myBrown;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 18px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  &:hover {
+    background-color: $myLightOrangeBackground;
+    color: $myOrange;
+    border-color: $myBrown;
+  }
+  &:active {
+    box-shadow: $myOrange 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+}
+
+@media (max-width: 1299px) {
+  #title {
+    padding: 20px;
+    color: $myBrown;
+    font-size: 20px;
+  }
+  .eightBall {
+    width: 250px;
+    height: 250px;
+    .front-side {
+      width: 140px;
+      height: 140px;
+    }
+    .back-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+    }
+  }
+  .platform {
+    width: 200px;
+    &__cy {
+      height: 20px;
+    }
+    &__lec {
+      height: 20px;
+    }
+  }
+
+  @keyframes up-and-down {
+    0% {
+      transform: translate(-50%, -10%);
+    }
+    100% {
+      transform: translate(-50%, 10%);
+    }
+  }
+}
+
+// @media (max-width: 1199px) {
+//   .eightBall{
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
+// @media (max-width: 998px) {
+//   .eightBall{
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
+
+// @media (max-width: 767.98px) {
+//   .eightBall{
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
