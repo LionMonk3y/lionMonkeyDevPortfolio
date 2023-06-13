@@ -82,18 +82,18 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-#projectsGrid .linkToProject .projectDescription {
+#projectsGrid .projectDescription {
   margin-top: 20px;
   padding: 20px 0px;
   color: rgb(223, 117, 56);
 }
-#projectsGrid .linkToProject .projectDescription h2 {
+#projectsGrid .projectDescription h2 {
   font-family: myFontJreeng;
   font-size: 24px;
   margin: 0;
   padding-bottom: 10px;
 }
-#projectsGrid .linkToProject .projectDescription p {
+#projectsGrid .projectDescription p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
 }
