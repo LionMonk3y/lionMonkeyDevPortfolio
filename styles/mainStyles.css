@@ -360,12 +360,12 @@ footer #copyrightInfo {
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1280px) {
   .navbar .nav-item {
-    font-size: 30px;
+    font-size: 25px;
   }
   .navbar img {
-    height: 30px;
+    height: 25px;
   }
   #aboutMe {
     height: 800px;
@@ -422,6 +422,15 @@ footer #copyrightInfo {
   }
   .contactForm #contactFormBox #formMessageText {
     font-size: 20px;
+  }
+  footer #footerContact {
+    gap: 50px;
+  }
+  footer #footerDevider {
+    width: 300px;
+  }
+  footer #copyrightInfo {
+    font-size: 15px;
   }
   .superButtons {
     font-size: 20px;

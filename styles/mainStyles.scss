@@ -371,16 +371,16 @@ footer {
   }
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1280px) {
   .navbar {
     .nav-item {
-      font-size: 30px;
+      font-size: 25px;
     }
     img {
-      height: 30px;
+      height: 25px;
     }
   }
-
+  
   #aboutMe {
     height: 800px;
     .aboutMeSection {
@@ -448,6 +448,18 @@ footer {
       #formMessageText {
         font-size: 20px;
       }
+    }
+  }
+
+  footer {
+    #footerContact {
+      gap: 50px;
+    }
+    #footerDevider {
+      width: 300px;
+    }
+    #copyrightInfo {
+      font-size: 15px;
     }
   }
 

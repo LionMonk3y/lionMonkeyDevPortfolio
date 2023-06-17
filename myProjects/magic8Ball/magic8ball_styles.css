@@ -281,6 +281,14 @@ body p {
   transform: translate(2px, 2px);
 }
 
+@media (min-width: 1280px) {
+  .navbar .nav-item {
+    font-size: 25px;
+  }
+  .navbar img {
+    height: 25px;
+  }
+}
 @media (max-width: 1299px) {
   #title {
     padding: 20px;

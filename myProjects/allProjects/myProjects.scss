@@ -72,7 +72,7 @@ body {
     height: 20px;
     background-color: gray;
   }
-  .linkToProject{
+  .linkToProject {
     text-decoration: none;
     .whiteBckgr {
       height: 180px;
@@ -227,6 +227,35 @@ $disabled-gray: #ddd;
     }
     &:active:hover:after {
       background-color: $maximize-green-active;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    .nav-item {
+      font-size: 25px;
+    }
+    img {
+      height: 25px;
+    }
+  }
+  #projectsGrid {
+    .webStyle {
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .projectDescription {
+      padding: 30px 0px 0px 0px;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+        margin: 0;
+      }
     }
   }
 }
