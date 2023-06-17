@@ -46,7 +46,6 @@ body {
 }
 
 #projectsGrid {
-  height: 500px;
   background-color: rgb(28, 20, 27);
 }
 #projectsGrid .row {
@@ -98,14 +97,31 @@ body {
   font-size: 16px;
 }
 
-@media (max-width: 992px) {
-  .row {
-    margin: 0;
-  }
-  .webStyle {
-    margin-bottom: 50px;
-  }
+/* FOOTER */
+footer {
+  background-color: rgb(28, 20, 27);
+  color: rgb(223, 117, 56);
 }
+footer #footerContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: -10px;
+}
+footer #footerDevider {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(223, 117, 56);
+}
+footer #copyrightInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
 .traffic-lights {
   padding-left: 10px;
   height: 20px;
@@ -217,5 +233,13 @@ body {
   #projectsGrid .projectDescription p {
     font-size: 20px;
     margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .row {
+    margin: 0;
+  }
+  .webStyle {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=myProjects.css.map */

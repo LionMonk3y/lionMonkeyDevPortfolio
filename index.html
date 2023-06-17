@@ -279,18 +279,18 @@
 
         <div class="col-lg-7">
           <div id="contactFormBox">
-            <form action="" id="contactFormData" class="container-sm">
+            <form action="contactForm.php" method="post" id="contactFormData" class="container-sm">
               <div class="row-sm">
-                <input type="text" placeholder="First Name*" class="col" />
-                <input type="text" placeholder="Company Website" class="col" />
+                <input type="text" name="name" placeholder="First Name*" class="col" />
+                <input type="text" name="companyWebsite" placeholder="Company Website" class="col" />
               </div>
               <div class="row-sm">
-                <input type="email" placeholder="Email Address*" class="col" />
-                <input type="text" placeholder="Subject*" class="col-6" />
+                <input type="email" name="email" placeholder="Email Address*" class="col" />
+                <input type="text" name="subject" placeholder="Subject*" class="col-6" />
               </div>
-              <textarea name="" id="formMessageText" rows="5" placeholder="How can I help you?*"
+              <textarea name="message" id="formMessageText" rows="5" placeholder="How can I help you?*"
                 class="row col-12"></textarea>
-              <button id="contactFormSubmit" class="superButtons row">
+              <button type="submit" id="contactFormSubmit" class="superButtons row">
                 Submit
               </button>
               <div id="margin30"></div>
@@ -321,7 +321,7 @@
 
     <hr id="footerDevider" />
     <div id="copyrightInfo">
-      <p>Copyright © 2023 LionMonkey</p>
+      <p>Copyright © 2023 LionMonkeyDev</p>
     </div>
   </footer>
 </body>
