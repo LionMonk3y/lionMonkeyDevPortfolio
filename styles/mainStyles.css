@@ -360,7 +360,7 @@ footer #copyrightInfo {
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1280px) {
   .navbar .nav-item {
     font-size: 30px;
   }
