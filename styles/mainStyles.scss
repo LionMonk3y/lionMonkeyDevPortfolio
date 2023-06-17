@@ -361,13 +361,98 @@ footer {
   text-decoration: none;
   user-select: none;
   touch-action: manipulation;
-  &:hover{
+  &:hover {
     background-color: $myBrown;
     color: $myOrange;
   }
   &:active {
     box-shadow: $myBrown 2px 2px 0 0;
     transform: translate(2px, 2px);
+  }
+}
+
+@media (min-width: 1199px) {
+  .navbar {
+    .nav-item {
+      font-size: 30px;
+    }
+    img {
+      height: 30px;
+    }
+  }
+
+  #aboutMe {
+    height: 800px;
+    .aboutMeSection {
+      .aboutMePicture {
+        img {
+          height: 500px;
+        }
+      }
+    }
+    .aboutMeInfo {
+      .aboutMeInfoBckgr {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #myProjects {
+    .myProjectsTitle {
+      font-size: 44px;
+    }
+    .card {
+      .card-title {
+        font-size: 30px;
+      }
+      .card-text {
+        font-size: 20px;
+      }
+    }
+    .imageFirst {
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .imageThird {
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .imageFourth {
+      background-size: cover;
+    }
+  }
+
+  .contactForm {
+    height: 600px;
+    .formLeftText {
+      font-size: 44px;
+      letter-spacing: 12px;
+    }
+    #contactFormBox {
+      display: flex;
+      align-items: center;
+      height: 450px;
+      input {
+        font-size: 20px;
+      }
+      #formMessageText {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .superButtons {
+    font-size: 20px;
   }
 }
 
