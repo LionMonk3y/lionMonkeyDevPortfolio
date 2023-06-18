@@ -64,7 +64,7 @@
     <div id="anchor1" class="aboutMeSection container">
       <div class="row">
         <div class="aboutMePicture col-xl-5">
-          <img src="/images/temporaryLogo.png" class="img-fluid" alt="Photo of me" />
+          <img src="/images/aboutMePhoto.jpeg" class="img-fluid" alt="Photo of me" />
         </div>
         <div class="aboutMeInfo col-xl-7 col-sm-12">
           <div class="aboutMeInfoBckgr">
@@ -84,7 +84,7 @@
               <b>Let's team up and create something amazing together!</b>
             </p>
             <div id="button1">
-              <button class="superButtons">Work with me!</button>
+              <a href="#anchor3"><button class="superButtons">Work with me!</button></a>
             </div>
           </div>
         </div>
@@ -168,9 +168,10 @@
                   <div class="card-body my-auto">
                     <h3 class="card-title">WP WEBSITE</h3>
                     <p class="card-text" style="margin-top: 2%">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua Egestas purus viverra accumsan in nisl nisi
+                      WordPress was my first programming experience in the past and
+                      thanks to it I became interested in learning how to write code
+                      from scratch. I have used this tool to create websites and
+                      online shops.
                     </p>
                     <div class="buttonCard" style="margin-top: 3%">
                       <a href="https://dev-econsulting.pantheonsite.io/" target="_blank"><button
@@ -281,14 +282,14 @@
           <div id="contactFormBox">
             <form action="contactForm.php" method="post" id="contactFormData" class="container-sm">
               <div class="row-sm">
-                <input type="text" name="name" placeholder="First Name*" class="col" />
+                <input required type="text" name="name" placeholder="First Name*" class="col" />
                 <input type="text" name="companyWebsite" placeholder="Company Website" class="col" />
               </div>
               <div class="row-sm">
-                <input type="email" name="email" placeholder="Email Address*" class="col" />
-                <input type="text" name="subject" placeholder="Subject*" class="col-6" />
+                <input required type="email" name="email" placeholder="Email Address*" class="col" />
+                <input required type="text" name="subject" placeholder="Subject*" class="col-6" />
               </div>
-              <textarea name="message" id="formMessageText" rows="5" placeholder="How can I help you?*"
+              <textarea required name="message" id="formMessageText" rows="5" placeholder="How can I help you?*"
                 class="row col-12"></textarea>
               <button type="submit" name="submit" id="contactFormSubmit" class="superButtons row">
                 Submit

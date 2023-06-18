@@ -304,6 +304,7 @@ footer #copyrightInfo {
      -moz-user-select: none;
           user-select: none;
   touch-action: manipulation;
+  margin: 0px 10px;
 }
 .superButton:hover {
   background-color: rgba(245, 179, 135, 0.281);
@@ -328,11 +329,11 @@ footer #copyrightInfo {
     text-align: center;
   }
   .description h1 {
-    margin: 0px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
   }
   .description p {
-    margin: 20px 0px;
+    margin-bottom: 50px;
     font-size: 20px;
   }
   .box {
@@ -357,6 +358,19 @@ footer #copyrightInfo {
   #title {
     padding: 20px;
     color: rgb(28, 20, 27);
+    font-size: 40px;
+  }
+  .description {
+    margin: 30px;
+    color: rgb(28, 20, 27);
+    text-align: center;
+  }
+  .description h1 {
+    margin: 0px;
+    font-size: 30px;
+  }
+  .description p {
+    margin: 20px 0px;
     font-size: 20px;
   }
   .eightBall {

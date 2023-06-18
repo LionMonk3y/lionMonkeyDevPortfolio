@@ -76,6 +76,10 @@ body {
   border-bottom-right-radius: 15px;
 }
 #projectsGrid .linkToProject .whiteBckgr img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   height: 200px;
   width: 100%;
   border-bottom-left-radius: 15px;
@@ -95,6 +99,10 @@ body {
 #projectsGrid .projectDescription p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
+}
+
+.emptyDescriptionHeight {
+  height: 120px;
 }
 
 /* FOOTER */

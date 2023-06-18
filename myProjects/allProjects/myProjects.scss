@@ -80,6 +80,8 @@ body {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       img {
+        object-fit: cover;
+        object-position: center top;
         height: 200px;
         width: 100%;
         border-bottom-left-radius: 15px;
@@ -105,11 +107,15 @@ body {
   }
 }
 
+.emptyDescriptionHeight {
+  height: 120px;
+}
+
 /* FOOTER */
 
 footer {
   background-color: $myBrown;
-  color: $myOrange;  
+  color: $myOrange;
   #footerContact {
     display: flex;
     align-items: center;

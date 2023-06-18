@@ -370,6 +370,7 @@ footer {
   text-decoration: none;
   user-select: none;
   touch-action: manipulation;
+  margin: 0px 10px;
   &:hover {
     background-color: $myLightOrangeBackground;
     color: $myOrange;
@@ -395,14 +396,15 @@ footer {
     color: $myBrown;
     text-align: center;
     h1 {
-      margin: 0px;
-      font-size: 30px;
+      margin-bottom: 50px;
+      font-size: 40px;
     }
     p {
-      margin: 20px 0px;
+      margin-bottom: 50px;
       font-size: 20px;
     }
   }
+  
   .box {
     margin-top: 100px;
     .eightBall {
@@ -426,8 +428,22 @@ footer {
   #title {
     padding: 20px;
     color: $myBrown;
-    font-size: 20px;
+    font-size: 40px;
   }
+  .description {
+    margin: 30px;
+    color: $myBrown;
+    text-align: center;
+    h1 {
+      margin: 0px;
+      font-size: 30px;
+    }
+    p {
+      margin: 20px 0px;
+      font-size: 20px;
+    }
+  }
+  
   .eightBall {
     width: 250px;
     height: 250px;

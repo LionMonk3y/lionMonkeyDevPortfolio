@@ -45,6 +45,7 @@ body {
     color: $myOrange;
     font-family: myFontShort;
     font-size: 16px;
+    padding: 0px 10px;
     .nav-link {
       color: $myOrange;
     }
@@ -97,6 +98,7 @@ body {
       justify-content: center;
       align-items: center;
       img {
+        object-fit: cover;
         height: 400px;
         border-radius: 30px;
       }
@@ -193,11 +195,11 @@ body {
     background-size: cover;
   }
   .imageThird {
-    background-image: url(/images/temporaryLogo.png);
+    background-image: url(/images/magic_8_ball.png);
     background-size: cover;
   }
   .imageFourth {
-    background-image: url(/images/wp_website.png);
+    background-image: url(/images/coding.jpg);
     background-size: cover;
   }
 
@@ -380,7 +382,7 @@ footer {
       height: 25px;
     }
   }
-  
+
   #aboutMe {
     height: 800px;
     .aboutMeSection {
