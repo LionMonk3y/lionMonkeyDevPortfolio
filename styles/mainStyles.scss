@@ -539,7 +539,7 @@ footer {
       font-size: 20px !important;
     }
     p {
-      font-size: 16px !important;
+      font-size: 16px;
     }
   }
   #myProjects {
@@ -592,26 +592,101 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-  .imgHero {
-    transform: translateX(0%) !important;
-    transform: translateY(-28%) !important;
-    height: 100%;
-    // padding-right: 20px;
-    // padding-left: 20px;
+  .fullBckgr {
+    background-image: url(/images/lmd_main_background.png);
+    background-size: 200%;
+    height: 100vh;
   }
-  .card {
-    width: 100% !important;
-    height: 60% !important;
+
+  #aboutMe {
+    height: 850px;
+
+    .aboutMeSection {
+      .aboutMePicture {
+        img {
+          object-fit: cover;
+          width: 300px;
+        }
+      }
+      .aboutMeInfo {
+        .aboutMeInfoBckgr {
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .imgHero {
+      transform: translateX(0%) !important;
+      transform: translateY(-28%) !important;
+      height: 100%;
+      // padding-right: 20px;
+      // padding-left: 20px;
+    }
+    .card {
+      width: 100% !important;
+      height: 60% !important;
+    }
+    .buttonCard {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+    // .imgSec {
+    //     height: 100% !important;
+    // }
+    .imageFirst {
+      width: 100%;
+    }
   }
-  .buttonCard {
-    padding-left: 4%;
-    padding-right: 4%;
+
+  #myProjects {
+    .myProjectsTitle {
+      font-size: 30px;
+    }
+    .card {
+      .card-title {
+        font-size: 24px;
+      }
+      .card-text {
+        font-size: 16px;
+      }
+    }
+    .imageFirst {
+      background-size: cover;
+      background-position: center;
+    }
+    .imageSecond {
+      background-size: cover;
+      background-position: center;
+    }
+    .imageThird {
+      background-size: cover;
+      background-position: center;
+    }
+    .imageFourth {
+      background-size: cover;
+      background-position: center;
+    }
   }
-  // .imgSec {
-  //     height: 100% !important;
-  // }
-  .imageFirst {
-    width: 100%;
+
+  .contactForm {
+    height: 600px;
+    .formLeftText {
+      font-size: 30px;
+    }
+    #contactFormBox {
+      padding: 0px 10px;
+      input {
+        font-size: 16px;
+      }
+      #formMessageText {
+        font-size: 16px;
+      }
+    }
   }
 }
 

@@ -496,7 +496,7 @@ footer #copyrightInfo {
     font-size: 20px !important;
   }
   #aboutMe p {
-    font-size: 16px !important;
+    font-size: 16px;
   }
   #myProjects .myProjectsTitle {
     font-size: 30px;
@@ -539,20 +539,79 @@ footer #copyrightInfo {
   }
 }
 @media (max-width: 575.98px) {
-  .imgHero {
+  .fullBckgr {
+    background-image: url(/images/lmd_main_background.png);
+    background-size: 200%;
+    height: 100vh;
+  }
+  #aboutMe {
+    height: 850px;
+  }
+  #aboutMe .aboutMeSection .aboutMePicture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 300px;
+  }
+  #aboutMe .aboutMeSection .aboutMeInfo .aboutMeInfoBckgr h1 {
+    font-size: 24px;
+  }
+  #aboutMe .aboutMeSection .aboutMeInfo .aboutMeInfoBckgr p {
+    font-size: 16px;
+  }
+  #aboutMe .imgHero {
     transform: translateX(0%) !important;
     transform: translateY(-28%) !important;
     height: 100%;
   }
-  .card {
+  #aboutMe .card {
     width: 100% !important;
     height: 60% !important;
   }
-  .buttonCard {
+  #aboutMe .buttonCard {
     padding-left: 4%;
     padding-right: 4%;
   }
-  .imageFirst {
+  #aboutMe .imageFirst {
     width: 100%;
+  }
+  #myProjects .myProjectsTitle {
+    font-size: 30px;
+  }
+  #myProjects .card .card-title {
+    font-size: 24px;
+  }
+  #myProjects .card .card-text {
+    font-size: 16px;
+  }
+  #myProjects .imageFirst {
+    background-size: cover;
+    background-position: center;
+  }
+  #myProjects .imageSecond {
+    background-size: cover;
+    background-position: center;
+  }
+  #myProjects .imageThird {
+    background-size: cover;
+    background-position: center;
+  }
+  #myProjects .imageFourth {
+    background-size: cover;
+    background-position: center;
+  }
+  .contactForm {
+    height: 600px;
+  }
+  .contactForm .formLeftText {
+    font-size: 30px;
+  }
+  .contactForm #contactFormBox {
+    padding: 0px 10px;
+  }
+  .contactForm #contactFormBox input {
+    font-size: 16px;
+  }
+  .contactForm #contactFormBox #formMessageText {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=mainStyles.css.map */
