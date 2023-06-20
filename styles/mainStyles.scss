@@ -373,7 +373,7 @@ footer {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1350px) {
   .navbar {
     .nav-item {
       font-size: 25px;
@@ -471,31 +471,33 @@ footer {
 }
 
 @media (max-width: 1199px) {
+  .fullBckgr {
+    background-size: 135%;
+  }
   #aboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1100px;
+    height: 1000px;
     img {
       margin-bottom: 30px;
-      height: 600px !important;
+      height: 500px !important;
+      // width: 900px;
     }
   }
-  #contactForm {
+  .contactForm {
     .formLeftText {
-      font-size: 30px;
+      font-size: 29px;
+    }
+    #contactFormBox {
+      padding: 0px 20px;
     }
   }
 }
 
 @media (max-width: 998px) {
-  // .mainPage {
-  //   background-size: contain;
-  // }
-  #aboutMe {
-    img {
-      height: 500px !important;
-    }
+  .fullBckgr {
+    background-size: 160%;
   }
   #myProjects {
     .imgHero {
@@ -507,95 +509,75 @@ footer {
     }
   }
   .contactForm {
-    height: 500px;
     .deleteBr {
       display: none;
     }
     .formLeftText {
-      font-size: 20px;
+      font-size: 24px;
       padding: 0;
       line-height: 150%;
       letter-spacing: 5px;
       text-align: center;
     }
     #contactFormBox {
-      input {
-        font-size: 16px;
-      }
-      textarea {
-        font-size: 16px !important;
-      }
+      padding: 0px 10px;
     }
   }
 }
 
 @media (max-width: 767.98px) {
+  .fullBckgr {
+    background-size: 180%;
+  }
   #aboutMe {
     height: 800px;
     img {
       height: 300px !important;
     }
-    h1 {
-      font-size: 20px !important;
-    }
-    p {
-      font-size: 16px;
-    }
   }
+
   #myProjects {
     .myProjectsTitle {
       font-size: 30px;
     }
-  }
-  .imgHero {
-    transform: translateX(0%) !important;
-    transform: translateY(-28%) !important;
-    height: 35%;
-  }
-  .card {
-    width: 100% !important;
-  }
-  #contactForm {
-    height: 600px;
-    .formLeftText {
-      font-size: 18px !important;
+    .imgHero {
+      transform: translateX(0%) !important;
+      transform: translateY(-28%) !important;
+      height: 35%;
     }
-    #contactFormBox {
-      input {
-        font-size: 16px;
+  }
+
+  .contactForm {
+    height: 600px;
+  }
+}
+
+@media (max-width: 657px) {
+  #myProjects {
+    .card {
+      .imageFirst {
+        background-size: cover;
+        background-position: center;
+      }
+      .imageSecond {
+        background-size: cover;
+        background-position: center;
+      }
+      .imageThird {
+        background-size: cover;
+        background-position: center;
+      }
+      .imageFourth {
+        background-size: cover;
+        background-position: center;
       }
     }
   }
 }
 
-@media (max-width: 657px) {
-  // .mainPage {
-  //   height: 65vh;
-  // }
-  #myProjects {
-    height: 900px;
-  }
-  #contactForm .formLeftText {
-    font-size: 16px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 10px;
-    line-height: 125%;
-  }
-  #contactForm #contactFormBox input {
-    font-size: 16px;
-    width: 100%;
-  }
-}
-
 @media (max-width: 575.98px) {
   .fullBckgr {
-    background-image: url(/images/lmd_main_background.png);
-    background-size: 200%;
-    height: 100vh;
+    background-size: 190%;
   }
 
   #aboutMe {
@@ -606,16 +588,6 @@ footer {
         img {
           object-fit: cover;
           width: 300px;
-        }
-      }
-      .aboutMeInfo {
-        .aboutMeInfoBckgr {
-          h1 {
-            font-size: 24px;
-          }
-          p {
-            font-size: 16px;
-          }
         }
       }
     }
@@ -642,53 +614,7 @@ footer {
       width: 100%;
     }
   }
-
-  #myProjects {
-    .myProjectsTitle {
-      font-size: 30px;
-    }
-    .card {
-      .card-title {
-        font-size: 24px;
-      }
-      .card-text {
-        font-size: 16px;
-      }
-    }
-    .imageFirst {
-      background-size: cover;
-      background-position: center;
-    }
-    .imageSecond {
-      background-size: cover;
-      background-position: center;
-    }
-    .imageThird {
-      background-size: cover;
-      background-position: center;
-    }
-    .imageFourth {
-      background-size: cover;
-      background-position: center;
-    }
-  }
-
-  .contactForm {
-    height: 600px;
-    .formLeftText {
-      font-size: 30px;
-    }
-    #contactFormBox {
-      padding: 0px 10px;
-      input {
-        font-size: 16px;
-      }
-      #formMessageText {
-        font-size: 16px;
-      }
-    }
-  }
 }
 
-@media (max-width: 520px) {
-}
+// @media (max-width: 520px) {
+// }
