@@ -62,6 +62,16 @@ svg {
   }
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;
