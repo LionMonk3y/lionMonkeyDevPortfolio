@@ -21,6 +21,7 @@
   color: rgb(206, 93, 30);
   font-family: myFontShort;
   font-size: 16px;
+  padding: 0px 10px;
 }
 .navbar .nav-item .nav-link {
   color: rgb(206, 93, 30);
@@ -42,9 +43,14 @@ body {
 }
 body .description {
   margin: 20px;
-  font-size: 12px;
   color: rgb(28, 20, 27);
   text-align: center;
+}
+body .description h1 {
+  font-size: 24px;
+}
+body .description p {
+  font-size: 16px;
 }
 
 .eightBall {
@@ -83,6 +89,8 @@ body .description {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  text-justify: inter-word;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -105,6 +113,7 @@ body .description {
 }
 
 .platform {
+  margin-bottom: 100px;
   width: 300px;
   position: relative;
   left: 50%;
@@ -122,7 +131,6 @@ body .description {
 }
 .platform .top::before {
   position: absolute;
-  top: -80%;
   left: 50%;
   content: "";
   width: 200%;
@@ -183,19 +191,6 @@ body .description {
   background: linear-gradient(to right, #333333, #222222, #111111, #000000);
   z-index: -1;
 }
-.platform .sphere-shadow {
-  position: absolute;
-  top: -20%;
-  left: 30%;
-  width: 320px;
-  height: 90px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.05);
-  transform: skewX(10deg);
-  filter: blur(5px);
-  z-index: -2;
-  animation: big-shadow 5s ease-in-out infinite alternate;
-}
 
 .shake {
   animation: shake 1s linear infinite;
@@ -247,26 +242,6 @@ footer #copyrightInfo {
     transform: translate(-50%, 20%);
   }
 }
-@keyframes big-shadow {
-  0% {
-    top: -20%;
-    left: 30%;
-  }
-  100% {
-    top: 0%;
-    left: 0%;
-  }
-}
-@keyframes small-shadow {
-  0% {
-    top: -80%;
-    left: 50%;
-  }
-  100% {
-    top: -30%;
-    left: 20%;
-  }
-}
 @keyframes shake {
   0% {
     transform: translate(-50%, 10%) translateX(30px) translateY(-20px) rotate(0deg);
@@ -316,80 +291,48 @@ footer #copyrightInfo {
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .navbar .nav-item {
     font-size: 25px;
   }
   .navbar img {
-    height: 25px;
+    height: 30px;
   }
   .description {
-    margin: 30px;
     color: rgb(28, 20, 27);
-    text-align: center;
   }
   .description h1 {
     margin-bottom: 50px;
-    font-size: 40px;
   }
   .description p {
     margin-bottom: 50px;
-    font-size: 20px;
   }
   .box {
     margin-top: 100px;
   }
-  .box .eightBall {
-    width: 300px;
-    height: 300px;
-  }
-  .box .eightBall .front-side {
-    width: 150px;
-    height: 150px;
-  }
-  .box .eightBall .front-side .number {
-    font-size: 75px;
-  }
-  .platform {
-    width: 250px;
-  }
 }
 @media (max-width: 1199px) {
-  #title {
-    padding: 20px;
-    color: rgb(28, 20, 27);
-    font-size: 40px;
-  }
-  .description {
-    margin: 30px;
-    color: rgb(28, 20, 27);
-    text-align: center;
-  }
-  .description h1 {
-    margin: 0px;
-    font-size: 30px;
-  }
-  .description p {
-    margin: 20px 0px;
-    font-size: 20px;
-  }
   .eightBall {
+    margin-top: 50px;
     width: 250px;
     height: 250px;
   }
   .eightBall .front-side {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
+  }
+  .eightBall .front-side .number {
+    font-size: 54px;
+  }
+  .eightBall:after {
+    display: none;
   }
   .eightBall .back-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   .platform {
-    width: 200px;
+    width: 250px;
   }
   .platform__cy {
     height: 20px;
@@ -397,12 +340,27 @@ footer #copyrightInfo {
   .platform__lec {
     height: 20px;
   }
-  @keyframes up-and-down {
-    0% {
-      transform: translate(-50%, -10%);
-    }
-    100% {
-      transform: translate(-50%, 10%);
-    }
+}
+@media (max-width: 767.98px) {
+  .eightBall {
+    width: 150px;
+    height: 150px;
+  }
+  .eightBall .front-side {
+    width: 100px;
+    height: 100px;
+  }
+  .eightBall .front-side .number {
+    font-size: 34px;
+  }
+  .eightBall .back-side {
+    height: 100px;
+    width: 100px;
+  }
+  .eightBall #response {
+    font-size: 16px !important;
+  }
+  .platform {
+    width: 150px;
   }
 }/*# sourceMappingURL=magic8ball_styles.css.map */
