@@ -24,6 +24,14 @@ body {
   font-family: myFontShort;
   src: url(/fonts/ShortStack-Regular.ttf);
 }
+.animate__animated.animate__backInLeft {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 3s;
+}
+
 /* Main Page with Navigation Menu */
 .navbar {
   background-color: rgb(28, 20, 27);
@@ -65,7 +73,7 @@ body {
 }
 #aboutMeDeviderTop svg {
   position: relative;
-  width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   background-color: rgb(206, 93, 30);
 }
@@ -129,7 +137,7 @@ body {
   width: 100%;
 }
 #aboutMeDeviderBot svg {
-  width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   background-color: rgb(28, 20, 27);
 }
@@ -211,7 +219,7 @@ body {
   width: 100%;
 }
 .contactFormDeviderTop svg {
-  width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   background-color: rgb(206, 93, 30);
 }
@@ -297,7 +305,7 @@ body {
   width: 100%;
 }
 .contactFormDeviderBot svg {
-  width: calc(100% + 1.3px);
+  width: 100%;
   height: 100px;
   background-color: rgb(28, 20, 27);
 }
