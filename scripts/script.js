@@ -46,3 +46,7 @@ const observer = new IntersectionObserver((entries) => {
 animationConfigurations.forEach((config) => {
   observer.observe(config.element);
 });
+
+// $(window).on("load", function () {
+//   $(".loader-wrapper").fadeOut("slow");
+// });
