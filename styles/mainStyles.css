@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: rgb(28, 20, 27);
+  background-color: rgb(28, 20, 27) !important;
 }
 
 @font-face {
