@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/mainStyles.css" />
-    <script defer src="/scripts/script.js"></script>
 
-    <!-- Transitions/Animations-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/mainStyles.css" />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Transitions/Animations-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Favicon -->
-    <title>LionMonkeyDev</title>
-  </head>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
-  <body>
-    <!-- <div class="loader-wrapper">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon-32x32.png">
+  <link rel="icon" href="favicon-32x32.png">
+  <title>LionMonkeyDev</title>
+</head>
+
+<body>
+  <!-- <div class="loader-wrapper">
     <div id="loader">
       <div id="d1"></div>
       <div id="d2"></div>
@@ -41,471 +30,313 @@
       <div id="d5"></div>
     </div>
   </div> -->
-    <!-- Main Page with Navigation Menu-->
-    <nav class="navbar navbar-expand-lg py-2 fixed-top">
-      <div id="center" class="container">
-        <a href="/index.html" class="navbar-brand"
-          ><img src="/images/250x150.png" alt=""
-        /></a>
+  <!-- Main Page with Navigation Menu-->
+  <nav class="navbar navbar-expand-lg py-2 fixed-top">
+    <div id="center" class="container">
+      <a href="/index.html" class="navbar-brand"><img src="/images/250x150.png" alt="" /></a>
 
-        <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#anchor1" class="nav-link">aboutMe</a>
-            </li>
-            <li class="nav-item">
-              <a href="#anchor2" class="nav-link">myProjects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#anchor3" class="nav-link">getInTouch</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#anchor1" class="nav-link">aboutMe</a>
+          </li>
+          <li class="nav-item">
+            <a href="#anchor2" class="nav-link">myProjects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#anchor3" class="nav-link">getInTouch</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <section class="mainPage">
-      <div class="fullBckgr"></div>
-    </section>
-
-    <!-- About Me-->
-    <div id="aboutMeDeviderTop">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          class="shape-fill"
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        ></path>
-      </svg>
     </div>
+  </nav>
 
-    <section id="aboutMe">
-      <div id="anchor1" class="aboutMeSection container">
-        <div class="row">
-          <div id="anim1" class="aboutMePicture col-xl-5 animate__animated">
-            <img
-              src="/images/aboutMePhoto.jpeg"
-              class="img-fluid"
-              alt="Photo of me"
-            />
-          </div>
-          <div
-            id="anim2"
-            class="aboutMeInfo col-xl-7 col-sm-12 animate__animated"
-          >
-            <div class="aboutMeInfoBckgr">
-              <h1>Who am I?</h1>
-              <p>
-                <b>I'm Jewgienij</b> known as <b>LionMonkeyDev</b>, a Frontend
-                Developer with a passion for creating digital experiences that
-                are as beautiful as they are functional. With each new
-                challenge, I gain valuable experience and knowledge that I can
-                apply to future projects.
-                <b>I am confident in my ability to overcome obstacles</b> and
-                deliver results that exceed expectations.
-              </p>
-              <p>
-                Are you looking for a Frontend Developer who is both skilled and
-                fun to work with? Look no further.
-                <b>Let's team up and create something amazing together!</b>
-              </p>
-              <div id="button1">
-                <a href="#anchor3"
-                  ><button class="superButtons">Work with me!</button></a
-                >
-              </div>
-            </div>
-          </div>
+  <section class="mainPage">
+    <div class="fullBckgr"></div>
+  </section>
+
+  <!-- About Me-->
+  <div id="aboutMeDeviderTop">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="shape-fill"
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+      </path>
+    </svg>
+  </div>
+
+  <section id="aboutMe">
+    <div id="anchor1" class="aboutMeSection container">
+      <div class="row">
+        <div id="anim1" class="aboutMePicture col-xl-5 animate__animated">
+          <img src="/images/aboutMePhoto.jpeg" class="img-fluid" alt="Photo of me" />
         </div>
-      </div>
-    </section>
-
-    <div id="aboutMeDeviderBot">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          class="shape-fill"
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        ></path>
-      </svg>
-    </div>
-
-    <!-- My Projects -->
-
-    <section id="myProjects">
-      <div id="anim3" class="animate__animated">
-        <div id="anchor2" class="myProjectsTitle">MY PROJECTS</div>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-interval="4000"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="carInd active smallNav"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-              class="smallNav"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-              class="smallNav"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-              class="smallNav"
-            ></button>
-          </div>
-          <div class="carousel-inner py-4">
-            <div class="carousel-item active">
-              <div class="container my-4">
-                <div
-                  class="card mb-3 filter mx-auto pt-3 pb-3"
-                  style="padding: 0%; border: none; width: 75%"
-                >
-                  <div class="row g-0 py-4">
-                    <div
-                      class="imgSec col-12 col-md-5 d-flex"
-                      style="position: relative; height: 25vh"
-                    >
-                      <div
-                        class="imgHero my-auto"
-                        style="
-                          transform: translateX(-10%);
-                          width: 100%;
-                          height: 100%;
-                        "
-                      >
-                        <div class="imageFirst h-100"></div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-7 py-3 px-md-1 px-1">
-                      <div class="card-body my-auto">
-                        <h3 class="card-title">Random Login Generator</h3>
-                        <p class="card-text" style="margin-top: 2%">
-                          Security has always been important! In order to take
-                          full advantage of the Internet and the services
-                          offered by others, we often need to create a personal
-                          account. You have probably come come across the...
-                        </p>
-                        <div class="buttonCard" style="margin-top: 3%">
-                          <a href="/myProjects/random_login_generator/"
-                            ><button
-                              class="superButtons mt-1 mt-md-0"
-                              type="submit"
-                            >
-                              Check it
-                            </button></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container my-4">
-                <div
-                  class="card mb-3 filter mx-auto pt-3 pb-3"
-                  style="padding: 0%; border: none; width: 75%"
-                >
-                  <div class="row g-0 py-4">
-                    <div
-                      class="imgSec col-12 col-md-5 d-flex"
-                      style="position: relative; height: 25vh"
-                    >
-                      <div
-                        class="imgHero my-auto"
-                        style="
-                          transform: translateX(-10%);
-                          width: 100%;
-                          height: 100%;
-                        "
-                      >
-                        <div class="imageSecond h-100"></div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-7 py-3 px-md-1 px-1">
-                      <div class="card-body my-auto">
-                        <h3 class="card-title">WP WEBSITE</h3>
-                        <p class="card-text" style="margin-top: 2%">
-                          WordPress was my first programming experience in the
-                          past and thanks to it I became interested in learning
-                          how to write code from scratch. I have used this tool
-                          to create websites and online shops.
-                        </p>
-                        <div class="buttonCard" style="margin-top: 3%">
-                          <a
-                            href="https://dev-econsulting.pantheonsite.io/"
-                            target="_blank"
-                            ><button
-                              class="superButtons mt-1 mt-md-0"
-                              type="submit"
-                            >
-                              Check it
-                            </button></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container my-4">
-                <div
-                  class="card mb-3 filter mx-auto pt-3 pb-3"
-                  style="padding: 0%; border: none; width: 75%"
-                >
-                  <div class="row g-0 py-4">
-                    <div
-                      class="imgSec col-12 col-md-5 d-flex"
-                      style="position: relative; height: 25vh"
-                    >
-                      <div
-                        class="imgHero my-auto"
-                        style="
-                          transform: translateX(-10%);
-                          width: 100%;
-                          height: 100%;
-                        "
-                      >
-                        <div class="imageThird h-100"></div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-7 py-3 px-md-1 px-1">
-                      <div class="card-body my-auto">
-                        <h3 class="card-title">Magic 8 Ball</h3>
-                        <p class="card-text" style="margin-top: 2%">
-                          Would you like to know your future? I am afraid it is
-                          quite impossible. However, you can always dream a
-                          little and let Fate decide what happens. Just ask a
-                          question, shake the magic ball and have fun!
-                        </p>
-                        <div class="buttonCard" style="margin-top: 3%">
-                          <a href="/myProjects/magic8Ball/index.html"
-                            ><button
-                              class="superButtons mt-1 mt-md-0"
-                              type="submit"
-                            >
-                              Check it
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container my-4">
-                <div
-                  class="card mb-3 filter mx-auto pt-3 pb-3"
-                  style="padding: 0%; border: none; width: 75%"
-                >
-                  <div class="row g-0 py-4">
-                    <div
-                      class="imgSec col-12 col-md-5 d-flex"
-                      style="position: relative; height: 25vh"
-                    >
-                      <div
-                        class="imgHero my-auto"
-                        style="
-                          transform: translateX(-10%);
-                          width: 100%;
-                          height: 100%;
-                        "
-                      >
-                        <div class="imageFourth h-100"></div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-7 py-3 px-md-1 px-1">
-                      <div class="card-body my-auto">
-                        <h3 class="card-title">Checkout more!</h3>
-                        <p class="card-text" style="margin-top: 2%">
-                          I believe that writing code is the only way to improve
-                          programming skills and creative thinking. Looking for
-                          new solutions is not easy, but the satisfaction at the
-                          end is priceless. See the full list of my projects.
-                        </p>
-                        <div class="buttonCard" style="margin-top: 3%">
-                          <a href="/myProjects/allProjects/myProjects.html"
-                            ><button
-                              class="superButtons mt-1 mt-md-0"
-                              type="submit"
-                            >
-                              Check it
-                            </button></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT FORM -->
-    <div class="contactFormDeviderTop">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          class="shape-fill"
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        ></path>
-      </svg>
-    </div>
-
-    <section id="anchor3" class="contactForm">
-      <div class="container">
-        <div class="row col">
-          <div id="anim4" class="formLeftText col-lg-5 animate__animated">
+        <div id="anim2" class="aboutMeInfo col-xl-7 col-sm-12 animate__animated">
+          <div class="aboutMeInfoBckgr">
+            <h1>Who am I?</h1>
             <p>
-              Do you have <br class="deleteBr" />
-              any questions? <br />
-              Reach me out!
+              <b>I'm Jewgienij</b> known as <b>LionMonkeyDev</b>, a Frontend
+              Developer with a passion for creating digital experiences that
+              are as beautiful as they are functional. With each new
+              challenge, I gain valuable experience and knowledge that I can
+              apply to future projects.
+              <b>I am confident in my ability to overcome obstacles</b> and
+              deliver results that exceed expectations.
             </p>
-          </div>
-
-          <div id="anim5" class="col-lg-7 animate__animated">
-            <div id="contactFormBox">
-              <form
-                action="contactForm.php"
-                method="post"
-                id="contactFormData"
-                class="container-sm"
-              >
-                <div class="row-sm">
-                  <input
-                    required
-                    type="text"
-                    name="name"
-                    placeholder="First Name*"
-                    class="col"
-                  />
-                  <input
-                    type="text"
-                    name="companyWebsite"
-                    placeholder="Company Website"
-                    class="col"
-                  />
-                </div>
-                <div class="row-sm">
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    placeholder="Email Address*"
-                    class="col"
-                  />
-                  <input
-                    required
-                    type="text"
-                    name="subject"
-                    placeholder="Subject*"
-                    class="col-6"
-                  />
-                </div>
-                <textarea
-                  required
-                  name="message"
-                  id="formMessageText"
-                  rows="5"
-                  placeholder="How can I help you?*"
-                  class="row col-12"
-                ></textarea>
-                <button
-                  type="submit"
-                  name="submit"
-                  id="contactFormSubmit"
-                  class="superButtons row"
-                >
-                  Submit
-                </button>
-                <div id="margin30"></div>
-              </form>
+            <p>
+              Are you looking for a Frontend Developer who is both skilled and
+              fun to work with? Look no further.
+              <b>Let's team up and create something amazing together!</b>
+            </p>
+            <div id="button1">
+              <a href="#anchor3"><button class="superButtons">Work with me!</button></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="contactFormDeviderBot">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          class="shape-fill"
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        ></path>
-      </svg>
+  <div id="aboutMeDeviderBot">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="shape-fill"
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- My Projects -->
+
+  <section id="myProjects">
+    <div id="anim3" class="animate__animated">
+      <div id="anchor2" class="myProjectsTitle">MY PROJECTS</div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="carInd active smallNav" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+            class="smallNav"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+            class="smallNav"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"
+            class="smallNav"></button>
+        </div>
+        <div class="carousel-inner py-4">
+          <div class="carousel-item active">
+            <div class="container my-4">
+              <div class="card mb-3 filter mx-auto pt-3 pb-3" style="padding: 0%; border: none; width: 75%">
+                <div class="row g-0 py-4">
+                  <div class="imgSec col-12 col-md-5 d-flex" style="position: relative; height: 25vh">
+                    <div class="imgHero my-auto" style="
+                          transform: translateX(-10%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+                      <div class="imageFirst h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">Random Login Generator</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        Security has always been important! In order to take
+                        full advantage of the Internet and the services
+                        offered by others, we often need to create a personal
+                        account. You have probably come come across the...
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <a href="/myProjects/random_login_generator/"><button class="superButtons mt-1 mt-md-0"
+                            type="submit">
+                            Check it
+                          </button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container my-4">
+              <div class="card mb-3 filter mx-auto pt-3 pb-3" style="padding: 0%; border: none; width: 75%">
+                <div class="row g-0 py-4">
+                  <div class="imgSec col-12 col-md-5 d-flex" style="position: relative; height: 25vh">
+                    <div class="imgHero my-auto" style="
+                          transform: translateX(-10%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+                      <div class="imageSecond h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">WP WEBSITE</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        WordPress was my first programming experience in the
+                        past and thanks to it I became interested in learning
+                        how to write code from scratch. I have used this tool
+                        to create websites and online shops.
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <a href="https://dev-econsulting.pantheonsite.io/" target="_blank"><button
+                            class="superButtons mt-1 mt-md-0" type="submit">
+                            Check it
+                          </button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container my-4">
+              <div class="card mb-3 filter mx-auto pt-3 pb-3" style="padding: 0%; border: none; width: 75%">
+                <div class="row g-0 py-4">
+                  <div class="imgSec col-12 col-md-5 d-flex" style="position: relative; height: 25vh">
+                    <div class="imgHero my-auto" style="
+                          transform: translateX(-10%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+                      <div class="imageThird h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">Magic 8 Ball</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        Would you like to know your future? I am afraid it is
+                        quite impossible. However, you can always dream a
+                        little and let Fate decide what happens. Just ask a
+                        question, shake the magic ball and have fun!
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <a href="/myProjects/magic8Ball/index.html"><button class="superButtons mt-1 mt-md-0"
+                            type="submit">
+                            Check it
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container my-4">
+              <div class="card mb-3 filter mx-auto pt-3 pb-3" style="padding: 0%; border: none; width: 75%">
+                <div class="row g-0 py-4">
+                  <div class="imgSec col-12 col-md-5 d-flex" style="position: relative; height: 25vh">
+                    <div class="imgHero my-auto" style="
+                          transform: translateX(-10%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+                      <div class="imageFourth h-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 py-3 px-md-1 px-1">
+                    <div class="card-body my-auto">
+                      <h3 class="card-title">Checkout more!</h3>
+                      <p class="card-text" style="margin-top: 2%">
+                        I believe that writing code is the only way to improve
+                        programming skills and creative thinking. Looking for
+                        new solutions is not easy, but the satisfaction at the
+                        end is priceless. See the full list of my projects.
+                      </p>
+                      <div class="buttonCard" style="margin-top: 3%">
+                        <a href="/myProjects/allProjects/myProjects.html"><button class="superButtons mt-1 mt-md-0"
+                            type="submit">
+                            Check it
+                          </button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <div class="contactFormDeviderTop">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="shape-fill"
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+      </path>
+    </svg>
+  </div>
+
+  <section id="anchor3" class="contactForm">
+    <div class="container">
+      <div class="row col">
+        <div id="anim4" class="formLeftText col-lg-5 animate__animated">
+          <p>
+            Do you have <br class="deleteBr" />
+            any questions? <br />
+            Reach me out!
+          </p>
+        </div>
+
+        <div id="anim5" class="col-lg-7 animate__animated">
+          <div id="contactFormBox">
+            <form action="contactForm.php" method="post" id="contactFormData" class="container-sm">
+              <div class="row-sm">
+                <input required type="text" name="name" placeholder="First Name*" class="col" />
+                <input type="text" name="companyWebsite" placeholder="Company Website" class="col" />
+              </div>
+              <div class="row-sm">
+                <input required type="email" name="email" placeholder="Email Address*" class="col" />
+                <input required type="text" name="subject" placeholder="Subject*" class="col-6" />
+              </div>
+              <textarea required name="message" id="formMessageText" rows="5" placeholder="How can I help you?*"
+                class="row col-12"></textarea>
+              <button type="submit" name="submit" id="contactFormSubmit" class="superButtons row">
+                Submit
+              </button>
+              <div id="margin30"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contactFormDeviderBot">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="shape-fill"
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="footerContact">
+      <a href="https://www.linkedin.com/in/walczykowski/" target="_blank"><img src="/images/svg/linkedin.svg"
+          alt="LinkedIn logo with link" /></a>
+      <a href="mailto:office@lionmonkey.dev"><img src="/images/svg/mail.svg" alt="Mail logo with link" /></a>
+      <a href="https://github.com/LionMonk3y" target="_blank"><img src="/images/svg/github.svg"
+          alt="Github logo with link" /></a>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div id="footerContact">
-        <a href="https://www.linkedin.com/in/walczykowski/" target="_blank"
-          ><img src="/images/svg/linkedin.svg" alt="LinkedIn logo with link"
-        /></a>
-        <a href="mailto:office@lionmonkey.dev"
-          ><img src="/images/svg/mail.svg" alt="Mail logo with link"
-        /></a>
-        <a href="https://github.com/LionMonk3y" target="_blank"
-          ><img src="/images/svg/github.svg" alt="Github logo with link"
-        /></a>
-      </div>
+    <hr id="footerDevider" />
+    <div id="copyrightInfo">
+      <p>Copyright © 2023 LionMonkeyDev</p>
+    </div>
+  </footer>
+</body>
+<script defer src="/scripts/script.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-      <hr id="footerDevider" />
-      <div id="copyrightInfo">
-        <p>Copyright © 2023 LionMonkeyDev</p>
-      </div>
-    </footer>
-  </body>
 </html>
