@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+<h1 id="title">lionMonkeyDev Survey</h1>
+<p id="description">First Certification Project - freeCodeCamp Survey Form</p>
+</header>
+
+<form id="survey-form">
+
+  <label for="name" id="name-label">Name</label>
+  <input id="name" type="text" placeholder="Enter your name" required/>
+
+  <label for="email" id="email-label">Email</label>
+  <input id="email" type="email" placeholder="Enter your email" required/>
+
+  <label for="companyName" id="companyName-label">Company name (optional)</label>
+  <input id="companyName" type="text" placeholder="Enter your company name"/>
+
+  <label for="number" id="number-label">Number of employees (optional)</label>
+  <input id="number" type="number" min="1" max="10000" placeholder="1"/>
+
+   <label for="dropdown" id="dropdown-label">Which option describes your current role?</label>
+  <select id="dropdown">
+    <option value="" selected>Select current role</option>
+    <option value="HR Recruiter">HR Recruiter</option>
+    <option value="IT Headhunter">IT Headhunter</option>
+    <option value="Prefer not to say">Prefer not to say</option>
+    <option value="Other">Other</option>
+  </select>
+  
+  <label for="checkboxlist" id="checkbox-list">Which sections of the portfolio did you find most valuable?</label>
+
+  <div class="checkbox-container">
+    <input class="checkboxlist" type="checkbox" value="about_me" />aboutMe
+  </div>
+  <div class="checkbox-container">
+    <input class="checkboxlist" type="checkbox" value="my_projects" />myProjects
+  </div>
+  <div class="checkbox-container">
+    <input class="checkboxlist" type="checkbox" value="get_in_touch" />getInTouch
+  </div>
+  
+   <!--Radio button attribute name have to be the same so the user can select only one answear from the group. -->
+  <label for="radioBut" id="radioButton-list">How would you rate the overall design of the portfolio?</label>
+  <div class="radio-container">
+    <input class="radioBut" type="radio" name="radioB-list" value="5" />5 - Excellent
+  </div>
+  <div class="radio-container">
+    <input class="radioBut" type="radio" name="radioB-list" value="4" />4 - Very Good
+  </div>
+  <div class="radio-container">
+    <input class="radioBut" type="radio" name="radioB-list" value="3" />3 - Good
+  </div>
+  <div class="radio-container">
+    <input class="radioBut" type="radio" name="radioB-list" value="2" />2 - Fair
+  </div>
+   <div class="radio-container"> 
+    <input class="radioBut" type="radio" name="radioB-list" value="1" />1 - Poor
+    </div>
+
+  <label for="question">What improvements would you suggest for the portfolio?</label>
+    <textarea id="question" name="improvement_suggestions" rows="5" cols="30" placeholder="Your suggestions...">
+    </textarea>
+    
+<input id="submit" type="submit" />
+
+</form>
+</body>
+</html>

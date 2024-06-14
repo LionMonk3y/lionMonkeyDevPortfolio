@@ -1,5 +1,15 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+$myOrange: rgb(206, 93, 30);
+$myLightOrangeBackground: rgba(245, 179, 135, 0.281);
+$myBrown: rgb(28, 20, 27);
+
+@font-face {
+  font-family: myFontShort;
+  src: url(/fonts/ShortStack-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +18,36 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #4a98f7;
+  background: #4a98f7 !important;
 }
+.navbar {
+  background-color: $myBrown;
+  color: $myOrange;
+  a {
+    color: $myOrange;
+  }
+  .nav-item {
+    justify-content: center;
+    text-align: center;
+    color: $myOrange;
+    font-family: myFontShort;
+    font-size: 16px;
+    .nav-link {
+      color: $myOrange;
+    }
+  }
+  img {
+    height: 20px;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 130, 48, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -115,8 +150,8 @@ section {
 .buttons {
   button {
     width: 100%;
-    color: #fff;
-    border: none;
+    color: red;
+
     outline: none;
     padding: 11px 0;
     font-size: 0.9rem;
@@ -124,19 +159,19 @@ section {
     background: none;
     border-radius: 4px;
     cursor: pointer;
-    .clear-canvas {
-      color: #6c757d;
-      border: 1px solid #6c757d;
-      transition: all 0.3s ease;
-    }
-    .clear-canvas:hover {
-      color: #fff;
-      background: #6c757d;
-    }
-    .save-img {
-      background: #4a98f7;
-      border: 1px solid #4a98f7;
-    }
+    // .clear-canvas {
+    //   color: #6c757d red;
+    //   border: 1px solid red;
+    //   transition: all 0.3s ease;
+    // }
+    // .clear-canvas:hover {
+    //   color: #fff;
+    //   background: green;
+    // }
+    // .save-img {
+    //   background: #4a98f7;
+    //   border: 1px solid #4a98f7;
+    // }
   }
 }
 .drawing-board {
